@@ -1,0 +1,7 @@
+.vscode
+.DS_Store
+.env
+__pycache__
+ehthumbs.db
+Thumbs.db
+
