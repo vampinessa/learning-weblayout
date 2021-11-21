@@ -1,0 +1,317 @@
+
+html {
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li, p, h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+/* оформление  */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+
+  .extra-text {
+      color: #999999;
+  }
+/* кнопки */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #CC9933;
+    border-radius: 10px;
+    border: 1px solid #CC9933;
+    background-color: white;
+}
+
+/* группировка ссылок со скобочкой */
+.link-bracket-group {
+    display: flex;
+    align-self: center;
+}
+
+.bracket-pics {
+    margin: auto 0;
+    margin-left: 6px;
+}
+
+/* основные стили */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 1170px;
+    margin: 0 auto;
+    outline: 2px solid rgb(252, 0, 147);
+
+}
+
+.header {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 1170px;
+    margin-bottom: 70px;
+    background-color: #E5E5E5;
+}
+
+.header-layout-row-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 54px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.header-logo {
+    display: inline-block;
+    margin-right: 40px;
+    border-radius: 15px;
+}
+
+.header-logo-link {
+    font-size: 0;
+}
+
+.header-phone {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500px;
+    font-style: normal;
+    color: #666666;
+}
+
+/* вход в личный кабинет */
+.private-office-img {
+    margin-right: 7px;
+}
+
+.private-office-btn-text {
+    margin: auto 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #CC9933;
+}
+
+.private-office-btn {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.header-layout-row-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 10px 45px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.main-nav-border {
+    width: 743px;
+    border-right: 1px solid #E1E1E1; 
+}
+
+.nav-item {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-item:last-child {
+    margin: 0;
+}
+
+
+.main-nav-item {
+    float: left;
+    margin-right: 35px;
+}
+
+.main-nav-link {
+    display: inline-block;
+    padding: 17px 5px;
+}
+
+.main-extra-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 426px; 
+}
+
+.extra-nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+/* основное содержимое */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1170px;
+    margin: 0 auto;   
+    margin-bottom: 70px;
+    outline: 2px solid lightseagreen;
+}
+
+.section-title {
+    padding-left: 30px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* секция Спецпредложения */
+.special-offers-list {
+    display: flex;
+    float: left;
+}
+.special-offer-item{
+    list-style: none;
+}
+
+.special-offer-card {
+
+}
+/* секция размещение  */
+
+.accommodation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.accomodation-list-item {
+    display: flex;
+    float: left;
+    list-style: none;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.accomodation-list-item:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.accommodation-card {
+    display: flex;
+    flex-direction: column;
+    width: 374px;
+    height: 440px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.accommodation-card-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.card-link-plug {
+    display: inline-block;
+}
+.accomodation-card-description {
+    display: flex;
+    flex-direction: column;
+    height: 223px;
+    padding: 36px 46px 41px 45px;
+}
+
+.accommodation-card-link {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+.accomodation-card-title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.accomodation-card-subtitle {
+    margin-bottom: 16px;
+}
+
+.accomodation-card-r1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.stars-groupe {
+    margin-left: auto; 
+}
+
+.plug-card {
+    background-color:   #2A2736;
+    background-image: url("../img/hotels/gag.jpg");
+}
+
+.card-link-plug {
+    margin: auto 54px 27px auto;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}
+
+/* Секция Услуги */
+
+.service-card-title {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    font-style: normal;
+    color: #CC9933;
+}
+
+
+
+/* футер  */
+
