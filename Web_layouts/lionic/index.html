@@ -11,7 +11,7 @@
 
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container header-contrainer flex">
         <h1 class="visually-hidden">Lionic legal solution</h1>
 
         <a class="logo-link">
@@ -22,14 +22,14 @@
           />
         </a>
 
-        <nav class="nav-header">
-          <ul class="header-nav-list">
+        <nav class="nav-header flex">
+          <ul class="header-nav-list list-reset flex">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#servises">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
 
             <li class="nav-item">
@@ -49,15 +49,16 @@
             </li>
           </ul>
         </nav>
-
-        <button class="btn header-btn" href="#">FREE TRIAL</button>
+        <button class="btn header-btn btn-reset" href="#">FREE TRIAL</button>
+     
       </div>
     </header>
 
     <main class="main">
       <section class="promo-section">
         <div class="container">
-          <h1 class="promo-header">
+          <div class="promo-content flex">
+          <h1 class="promo-title">
             This is&nbsp;simply a&nbsp;smarter way to&nbsp;make your legal
             online
           </h1>
@@ -65,23 +66,24 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore.
           </p>
-          <a class="btn promo-btn" href="#">FREE 30 DAY TRIAL</a>
+          <button class="btn promo-btn btn-reset" href="#">FREE 30 DAY TRIAL</button>
           <span class="additional-info promo-text-info"
             >SSL secured connection</span
           >
         </div>
+        </div>
       </section>
 
-      <section class="main-section servises-section" id="servises">
+      <section class="main-section services-section" id="services">
         <div class="container">
-          <h2 class="section-title servises-title">Services</h2>
-          <p class="regular-text servises-text">
+          <h2 class="section-title services-title">Services</h2>
+          <p class="regular-text services-text section-desc">
             Lionic guides you on making decisions for all aspects of your
             end-of-life plans.
           </p>
-          <ul class="servises-list">
-            <li class="servises-list-item">
-              <svg
+          <ul class="services-list list-reset flex">
+             <li class="services-list-item flex">
+              <svg class="sevice-ico"
                 width="68"
                 height="66"
                 viewBox="0 0 68 66"
@@ -101,15 +103,15 @@
                 </defs>
               </svg>
 
-              <h3 class="servises-list-header">Your Legacy</h3>
-              <p>
+              <h3 class="services-list-header">Your Legacy</h3>
+              <p class="services-list-text regular-text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy
               </p>
             </li>
 
-            <li class="servises-list-item">
-              <svg
+             <li class="services-list-item flex">
+              <svg class="sevice-ico"
                 width="86"
                 height="64"
                 viewBox="0 0 86 64"
@@ -122,15 +124,15 @@
                 />
               </svg>
 
-              <h3 class="servises-list-header">Your Health</h3>
-              <p>
+              <h3 class="services-list-header">Your Health</h3>
+              <p class="services-list-text regular-text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy
               </p>
             </li>
 
-            <li class="servises-list-item">
-              <svg
+             <li class="services-list-item flex">
+              <svg class="sevice-ico"
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"
@@ -143,15 +145,15 @@
                 />
               </svg>
 
-              <h3 class="servises-list-header">Funeral & Memorial</h3>
-              <p>
+              <h3 class="services-list-header">Funeral & Memorial</h3>
+              <p class="services-list-text regular-text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy
               </p>
             </li>
 
-            <li class="servises-list-item">
-              <svg
+             <li class="services-list-item flex">
+              <svg class="sevice-ico"
                 width="65"
                 height="65"
                 viewBox="0 0 65 65"
@@ -164,8 +166,8 @@
                 />
               </svg>
 
-              <h3>Legal & Financial</h3>
-              <p>
+              <h3 class="services-list-header">Legal & Financial</h3>
+              <p class="services-list-text regular-text">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                 diam nonummy
               </p>
@@ -173,14 +175,14 @@
           </ul>
         </div>
       </section>
-
+<!-- Статьи, новости -->
       <section class="main-section articles-section" id="articles">
         <div class="container">
           <h2 class="section-title">Articles</h2>
 
-          <ul class="articles-list">
+          <ul class="articles-list list-reset flex">
             <li class="articles-list-item">
-              <article class="blog-preview">
+              <article class="blog-preview flex">
                 <img
                   class="arcticle-preview"
                   src="img/a1.jpg"
@@ -202,7 +204,7 @@
             </li>
 
             <li class="articles-list-item">
-              <article class="blog-preview">
+              <article class="blog-preview flex">
                 <img
                   class="arcticle-preview"
                   src="img/a2.jpg"
@@ -225,7 +227,7 @@
             </li>
 
             <li class="articles-list-item">
-              <article class="blog-preview">
+              <article class="blog-preview flex">
                 <img
                   class="arcticle-preview"
                   src="img/a3.jpg"
@@ -247,7 +249,7 @@
             </li>
 
             <li class="articles-list-item">
-              <article class="blog-preview">
+              <article class="blog-preview flex">
                 <img
                   class="arcticle-preview"
                   src="img/a4.jpg"
@@ -256,9 +258,7 @@
                   height="180"
                 />
                 <div class="blog-review-text">
-                  <time class="list-item-date" datetime="2021-11-15"
-                    >11 Dec 2021</time
-                  >
+                  <time class="list-item-date" datetime="2021-11-15">11 Dec 2021</time>
                   <h3 class="list-item-header">Contractors</h3>
                   <p class="blog-desc">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -273,10 +273,10 @@
 
       <section class="main-section clients-section" id="clients">
         <div class="container">
-          >
+          
           <h2 class="section-title">Clients</h2>
 
-          <ul class="clients-feedback-list">
+          <ul class="clients-feedback-list list-reset">
             <li class="clients-feedback-item">
               <p>
                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit
@@ -284,15 +284,15 @@
                 facilisis at vero eros et accumsan et iusto odio dignissim qui
                 blandit odio dignissim qui blandit molestie consequat.
               </p>
-              <img
-                class="userpic"
-                src="img/armstrong.jpg"
-                alt="John Armstrong"
-                width="67"
-                height="67"
-              />
-              <span class="clients-name">John Armstrong</span>
-              <span class="clients-status">Customer</span>
+              <div class="clients-user">
+                <div class="user-pic">
+                  <img class="userpic" src="img/armstrong.jpg" alt="John Armstrong" width="67" height="67">
+                </div>
+                <div class="user-info">
+                  <p><span class="clients-name">John Armstrong</span></p>
+                  <p><span class="clients-status">Customer</span></p>
+                </div>
+            </div>
             </li>
 
             <li class="clients-feedback-item">
@@ -302,16 +302,16 @@
                 facilisis at vero eros et accumsan et iusto odio dignissim qui
                 blandit odio dignissim qui blandit molestie consequat.
               </p>
-              <img
-                class="userpic"
-                src="img/martin.jpg"
-                alt="Elizabeth Martin"
-                width="67"
-                height="67"
-              />
+              <div class="clients-user">
+                <div class="user-pic">
+                  <img class="userpic" src="img/martin.jpg" alt="Elizabeth Martin" width="67" height="67">
+                </div>
 
-              <span class="clients-name">Elizabeth Martin</span>
-              <span class="clients-status">Customer</span>
+                <div class="user-info">
+                  <p><span class="clients-name">Elizabeth Martin</span></p> 
+                  <p><span class="clients-status">Customer</span></p> 
+              </div>
+            </div>
             </li>
 
             <li class="clients-feedback-item">
@@ -321,54 +321,52 @@
                 facilisis at vero eros et accumsan et iusto odio dignissim qui
                 blandit odio dignissim qui blandit molestie consequat.
               </p>
-              <img
-                class="userpic"
-                src="img/soutby.jpg"
-                alt="Robin Soutby"
-                width="67"
-                height="67"
-              />
-              <span class="clients-name">Robin Soutby</span>
-              <span class="clients-status">Customer</span>
+              <div class="clients-user">
+                <div class="user-pic">
+                  <img class="userpic" src="img/soutby.jpg" alt="Robin Soutby" width="67" height="67">
+                </div>
+                <div class="user-info">
+                  <p><span class="clients-name">Robin Soutby</span></p>
+                  <p><span class="clients-status">Customer</span></p> 
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-
+<!-- Секция контакты -->
       <section class="main-section contacts-section" id="contacts">
         <h2 class="section-title">Contacts</h2>
-        <dl class="contacts-list">
-          <dt>Visit Us</dt>
-          <dd>
-            <address class="adress">
+        <address class="adress">
+        <ul class="contacts-list list-reset">
+          <li class="contacts-item">
+          <strong class="contacts-caption">Visit Us</strong>
               <p>
                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit.
               </p>
-            </address>
-          </dd>
+        </li>
 
-          <dt>Call Us</dt>
-          <dd>
-            <a class="contacts-link" href="tel:+7(987)6543210"
-              >+7 (987) 654-32-10</a
-            >
-            <a class="contacts-link" href="tel:+7(123)4567890"
-              >+7 (123) 456-78-90</a
-            >
-          </dd>
+        <li class="contacts-item">
 
-          <dt>Email Us</dt>
-          <dd>
-            <a class="contacts-link" href="mailto:example@example.com"
-              >example@example.com</a
-            >
-            <a class="contacts-link" href="mailto:support@example.com"
-              >support@example.com</a
-            >
-          </dd>
-        </dl>
+          <strong class="contacts-caption">Call Us</strong>
+            <a class="contacts-link" href="tel:+7(987)6543210">+7 (987) 654-32-10</a>
+          
+            <a class="contacts-link" href="tel:+7(123)4567890">+7 (123) 456-78-90</a>
+    
+        </li>
+
+        <li class="contacts-item">
+
+          <strong class="contacts-caption">Email Us</strong>>
+            <a class="contacts-link" href="mailto:example@example.com">example@example.com</a>
+          
+            <a class="contacts-link" href="mailto:support@example.com">support@example.com</a>
+           
+          </li>
+        </ul>
+      </address>
       </section>
-
+<!-- подписка -->
       <section class="main-section subscription-section" id="subs">
         <h2 class="section-title">Join us</h2>
 
@@ -413,7 +411,7 @@
       <span>Copyright ©2017. All Right Reserved</span>
 
       <div class="main-footer-nav">
-        <ul class="main-footer-nav">
+        <ul class="main-footer-nav list-reset">
           <li class="m-footer-nav-link nav-item">
             <a href="#"> About Us</a>
           </li>
@@ -430,7 +428,7 @@
       </div>
 
       <div class="footer-column-3">
-        <ul class="social-links-list">
+        <ul class="social-links-list list-reset">
           <li class="social-links-item">
             <a class="social-link" href="#">
               <svg

@@ -29,12 +29,6 @@ ul,
 p {
   margin: 0;
 }
-/* 
-.clear-fix {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 .visually-hidden {
   position: absolute;
@@ -65,58 +59,10 @@ p {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
-.page-header {
-  padding-top: 50px;
-  margin-bottom: 30px;
-}
-
- /* .nav-header {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-
-  min-width: 1540px; 
-  min-height: 80px;
-}
-
-.nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-items: center;
-}
-
-.nav-item {
-  list-style: none;
-  display: inline;
-  margin-right: 50px;
-}
-
-.nav-link {
-  display: inline-block;
-}  */
-
-/* .main-section {
-  margin-bottom: 160px;
-  border-top: 1px solid #e4e4e4;
-}
-
-.promo-section {
-  margin-bottom: 87px;
-  border-top: 1px solid #e4e4e4;
-} */
 
 .main-section {
   padding-top: 87px;
@@ -133,8 +79,12 @@ p {
   margin-bottom: 50px;
 }
 
-.header-container {
-  display: flex;
+.page-header {
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.header-contrainer {
   align-items: center;
 }
 
@@ -144,4 +94,65 @@ p {
 
 .nav-header {
   margin-right: 52px;
+}
+.nav-item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.promo-section {
+  padding: 100px 0;
+}
+
+.promo-content {
+  max-width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.promo-title {
+  margin-bottom: 25px;
+}
+
+.promo-text {
+  margin-bottom: 34px;
+}
+
+.promo-btn {
+  margin-bottom: 14px;
+}
+
+
+.services-title {
+  text-align: center;
+}
+
+.services-text {
+  text-align: center;
+}
+
+.services-list-item {
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  padding: 30px;
+}
+
+.services-list-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.sevice-ico {
+  margin-bottom: 25px;
+}
+
+.services-list-header {
+  margin-bottom: 15px;
+}
+
+.services-list-text {
+  text-align: center;
+}
+
+.blog-preview {
+
 }
