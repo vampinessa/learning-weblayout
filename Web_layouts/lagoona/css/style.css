@@ -305,8 +305,38 @@ img {
   line-height: 30px;
 }
 
+.promo-1 {
+  height: 258px;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+              url("../img/island.jpg") no-repeat;
+  object-fit: cover;
+}
+
+.promo-2 {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+              url("../img/lux-room.jpg") 0 0 no-repeat;
+  object-fit: cover;
+}
+
+.promo-3 {
+  background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+              url("../img/lux.jpg") no-repeat;
+}
+
+.promo-4 {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+              url("../img/lux-room.jpg") no-repeat;
+}
+.promo-5 {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+              url("../img/rooms.jpg") no-repeat;
+}
+
 .special-offer-link-text {
-  color: #FFCC66 ;
+  display: inline-block;
+  padding-right: 18px;
+  color: #FFCC66;
+  background: url("../img/bg/gold-bracket.svg") no-repeat right center;
 }
 
 /* Секция О нас */
