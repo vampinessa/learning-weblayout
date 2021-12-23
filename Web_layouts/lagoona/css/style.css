@@ -1,3 +1,36 @@
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  local("Muller"),
+        local("Muller Regular"),
+        url("../fonts/MullerRegular.woff2") format("woff2"),
+        url("../fonts/MullerRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:  local("Muller"),
+        local("Muller Medium"),
+        url("../fonts/MullerMedium.woff2") format("woff2"),
+        url("../fonts/MullerMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:  local("Muller"),
+        local("Muller Bold"),
+        url("../fonts/MullerBold.woff2") format("woff2"),
+        url("../fonts/MullerBold.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -10,6 +43,10 @@ html {
 
 body {
   min-width: 1200px;
+  font-family: "Muller", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
   background-color: #E5E5E5;
 }
 
@@ -69,7 +106,6 @@ img {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  font-style: normal;
   color: #CC9933;
   background-color: white;
   border: 1px solid #CC9933;
@@ -79,7 +115,7 @@ img {
 /* группировка ссылок со скобочкой */
 .link-bracket-group {
   display: flex;
-  align-self: center;
+  align-items: center;
 }
 
 .bracket-pics {
@@ -100,7 +136,6 @@ img {
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
-  font-style: normal;
 }
 
 /* основные стили  */
@@ -130,9 +165,8 @@ img {
 .header-phone {
   font-size: 20px;
   line-height: 20px;
-  font-weight: 500px;
-  font-style: normal;
-  color: #666666;
+  font-weight: 500;
+  color: #666;
 }
 
 /* вход в личный кабинет */
@@ -142,10 +176,7 @@ img {
 
 .private-office-btn-text {
   margin: auto 0;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  font-style: normal;
+  padding-top: 4px;
   color: #CC9933;
 }
 
@@ -153,41 +184,46 @@ img {
   margin-left: auto;
 }
 
+/* верхнее меню */
 .header-layout-row-2 {
     align-items: center;
+    justify-content: space-between;
     padding: 10px 45px;
     background-color: #FFFFFF;
 }
 
-.main-nav-border {
-  width: 743px;
-  border-right: 1px solid #E1E1E1;
+.main-nav {
+  padding-right: 50px;
 }
 
-.nav-item {
-  display: inline-block;
+.main-nav-list {
+  flex-wrap: wrap;
+  width: 642px;
+  justify-content: space-around;
 }
 
 .nav-item:last-child {
   margin: 0;
 }
 
-.main-nav-item {
-  margin-right: 35px;
+.main-nav-border {
+  border-right: 1px solid #E1E1E1;
 }
 
 .main-nav-link {
   display: inline-block;
   padding: 17px 5px;
+  color: #666;
 }
 
-.main-extra-nav {
-  justify-content: flex-end;
-  width: 426px;
+
+.main-extra-nav-list {
+  width: 324px;
+  justify-content: space-between;
 }
 
-.extra-nav-item:not(:last-child) {
-  margin-right: 40px;
+.extra-nav-item {
+  display: inline-block;
 }
 
 /* основное содержимое */
@@ -199,6 +235,9 @@ img {
   padding-left: 30px;
   margin-right: auto;
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 /* секция Спецпредложения */
@@ -240,36 +279,34 @@ img {
 
 .special-offer-title {
   margin-bottom: 15px;
+  font-weight: 700;
   font-size: 40px;
   line-height: 40px;
+
+}
+
+.special-offer-big-card-title {
+  margin-bottom: 15px;
   font-weight: 700;
-  font-style: normal;
-}
-
-.special-offer-big-card-title {
-  margin-bottom: 15px;
-}
-
-.special-offer-big-card-title {
-  margin-bottom: 15px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
-  font-style: normal;
 }
 
 .special-offer-card-price {
   margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .special-offer-big-card-price {
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
 }
 
-.pecial-offer-link-text {
-  font-size: 16px;
-  line-height: 16px;
+.special-offer-link-text {
+  color: #FFCC66 ;
 }
 
 /* Секция О нас */
@@ -308,10 +345,9 @@ img {
 }
 
 .service-card-title {
+  font-weight: 500;
   font-size: 20px;
   line-height: 40px;
-  font-weight: 500;
-  font-style: normal;
   color: #CC9933;
 }
 
@@ -379,12 +415,17 @@ img {
   padding: 36px 46px 41px 45px;
 }
 
+.price-bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .accomodation-card-title {
   margin-bottom: 16px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .accommodation-card-link {
@@ -408,10 +449,9 @@ img {
 
 .card-link-plug {
   margin: auto 54px 27px auto;
+  font-weight: 500;
   font-size: 20px;
   line-height: 40px;
-  font-weight: 500;
-  font-style: normal;
   color: #fff;
 }
 
@@ -437,9 +477,30 @@ img {
 }
 
 .choose-tour-form-field:not(:last-child) {
-  margin-right: 20px;
+  padding: 0 20px;
   border-right: 1px solid #E1E1E1;
 }
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 15px;
+}
+
+/* .field-city {
+  width: 170px;
+}
+
+.field-country {
+  width: 190px;
+}
+
+.field-nights,
+.field-people,
+.field-date {
+  width: 142px;
+} */
 
 /* Секция Контакты */
 .address-section {
@@ -475,14 +536,32 @@ img {
   vertical-align: top;
   padding-top: 25px;
 }
+
 .adress-title {
   width: 145px;
+}
+
+.address-table-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.table-text {
+  line-height: 24px;
+}
+
+.table-text-group {
+  margin-bottom: 3px;
 }
 
 .address-table-phone,
 .email-link {
   display: block;
-  line-height: 24px;
+}
+
+.email-table-address:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .table-extra-text {
@@ -491,6 +570,8 @@ img {
 
 .build-route-btn {
   margin-top: 45px;
+  padding: 27px 29px;
+  font-weight: 700;
 }
 
 /* футер */
@@ -527,15 +608,6 @@ img {
   margin-bottom: 15px;
 }
 
-.footer-link {
-  display: block;
-}
-
-.footer-link:not(:only-child) {
-  margin-bottom: 5px;
-}
-
-
 .footer-layout-col-3 {
   margin-left: auto;
   padding-top: 5px;
@@ -543,4 +615,18 @@ img {
 
 .footer-social-links-ttem:not(:last-child){
   margin-bottom: 20px;
+}
+
+.footer-text {
+  line-height: 30px;
+}
+
+.footer-link {
+  display: block;
+  line-height: 24px;
+  color: #CC9933;
+}
+
+.footer-address {
+  font-style: normal;
 }
