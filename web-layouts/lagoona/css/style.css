@@ -125,17 +125,6 @@ img {
   border-radius: 10px;
 }
 
-/* группировка ссылок со скобочкой */
-.link-bracket-group {
-  display: flex;
-  align-items: center;
-}
-
-.bracket-pics {
-  margin: auto 0;
-  margin-left: 6px;
-}
-
 /* ссылки */
 .extra-text {
   color: #999999;
@@ -359,9 +348,12 @@ img {
 }
 
 .service-cards-item {
+  margin-bottom: 23px;
+}
+
+.service-cards-wrapper {
   width: 573px;
   height: 330px;
-  margin-bottom: 23px;
   background-color: #2A2836;
 }
 
@@ -384,10 +376,13 @@ img {
 }
 
 .service-card-title {
+  display: inline-block;
+  padding-right: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 40px;
   color: #CC9933;
+  background: url("../img/bg/bronze-bracket.svg") no-repeat right center;
 }
 
 .service-card-link {
