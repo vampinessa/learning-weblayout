@@ -41,6 +41,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 1px solid #CC9933;
+}
+
 body {
   min-width: 1200px;
   font-family: "Muller", "Arial", "Helvetica", sans-serif;
@@ -175,18 +179,22 @@ img {
 }
 
 /* вход в личный кабинет */
-.private-office-img {
-  margin-right: 7px;
-}
-
 .private-office-btn-text {
   margin: auto 0;
   padding-top: 3px;
+  padding-left: 31px;
   color: #CC9933;
+  background: url("../img/bg/vector.svg") no-repeat center left;
+}
+
+.private-office-btn-text:hover {
+  color: #E9C379;
+  background: url("../img/bg/vector-hover.svg") no-repeat center left;
 }
 
 .private-office-btn {
   margin-left: auto;
+  padding: 5px;
 }
 
 /* верхнее меню */
