@@ -411,7 +411,11 @@ img {
   justify-content: space-between;
 }
 
-.advantage-cards-item {
+.advantage-cards-item:nth-of-type(-n+4) {
+  margin-bottom: 23px;
+}
+
+.advantage-card-wrapper {
   flex-direction: column;
   width: 275px;
   min-height: 275px;
@@ -427,9 +431,6 @@ img {
   padding-bottom: 31px;
 }
 
-.advantage-cards-item:nth-of-type(-n+4){
-  margin-bottom: 23px;
-}
 
 .advantage-card-1 {
   background-image: url("../img/icons/bathtub.png");
