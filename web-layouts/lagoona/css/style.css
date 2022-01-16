@@ -90,13 +90,6 @@ img {
   line-height: 0;
 }
 
-.btn-reset {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
 .flex {
     display: flex;
   }
@@ -137,7 +130,6 @@ img {
 }
 
 /* основные стили  */
-
 .header {
   padding-top: 30px;
   margin: 0 auto;
@@ -155,11 +147,6 @@ img {
   margin-right: 40px;
 }
 
-.header-logo-link {
-  font-size: 0;
-  line-height: 0;
-}
-
 .header-phone {
   font-weight: 500;
   font-size: 20px;
@@ -168,20 +155,22 @@ img {
 }
 
 /* вход в личный кабинет */
-.private-office-btn-text {
-  margin: auto 0;
-  padding-top: 3px;
+.private-office-link {
+  display: inline-block;
   padding-left: 31px;
+  padding-top: 3px;
+  margin-left: auto;
   color: #CC9933;
   background: url("../img/bg/vector.svg") no-repeat center left;
 }
 
-.private-office-btn-text:hover {
+.private-office-link:hover {
   color: #E9C379;
   background: url("../img/bg/vector-hover.svg") no-repeat center left;
 }
 
 .private-office-btn {
+  display: inline-block;
   margin-left: auto;
   padding: 5px;
 }
@@ -218,7 +207,6 @@ img {
   color: #666;
 }
 
-
 .main-extra-nav-list {
   width: 324px;
   justify-content: space-between;
@@ -253,12 +241,13 @@ img {
   width: 573px;
 }
 
-.special-offer-item:nth-child(odd) {
+.special-offer-item:nth-child(odd){
+  margin-bottom: 23px;
   margin-right: 23px;
 }
 
-.special-offer-small-card:nth-child(odd) {
-  margin-bottom: 23px;
+.special-offer-item:last-child{
+  margin: 0;
 }
 
 .special-offer-desc {
@@ -321,15 +310,6 @@ img {
               url("../img/lux.jpg") no-repeat;
 }
 
-.promo-4 {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-              url("../img/lux-room.jpg") no-repeat;
-}
-.promo-5 {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-              url("../img/rooms.jpg") no-repeat;
-}
-
 .special-offer-link-text {
   display: inline-block;
   padding-right: 18px;
@@ -351,28 +331,29 @@ img {
   margin-bottom: 23px;
 }
 
-.service-cards-wrapper {
-  width: 573px;
-  height: 330px;
-  background-color: #2A2836;
-}
-
-.service-cards-item:nth-of-type(odd) {
+.service-cards-item:nth-child(odd){
   margin-right: 23px;
 }
 
-.service-cards-item:nth-of-type(3),
-.service-cards-item:nth-of-type(4){
+.service-cards-item:nth-last-child(1),
+.service-cards-item:nth-last-child(2) {
   margin-bottom: 0;
 }
 
-.service-card {
-  height: 165px;
-  margin-top: 165px;
-  padding: 26px 126px 50px 45px;
+.service-cards-wrapper {
+  width: 573px;
+  min-height: 330px;
+  background-color: #2A2836;
+}
+
+.service-cards-wrapper {
+  padding: 191px 126px 50px 45px;
+  overflow: hidden;
   background-color: #FFFFFF;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
 }
 
 .service-card-title {
@@ -387,22 +368,33 @@ img {
 
 .service-card-link {
   display: inline-block;
+  position: relative;
+}
+
+.service-card-link::before {
+  content: '' ;
+  position: absolute;
+  display: block;
+  top: -200px;
+  left: -50px;
+  right: -270px;
+  bottom: -150px;
 }
 
 .service-card-1 {
-  background: url("../img/exclusive.jpg") no-repeat top center;
+  background-image: url("../img/exclusive.jpg");
 }
 
 .service-card-2 {
-  background: url("../img/foods.jpg") no-repeat top center;
+  background-image: url("../img/foods.jpg");
 }
 
 .service-card-3 {
-  background: url("../img/pool.jpg") no-repeat top center;
+  background-image: url("../img/pool.jpg");
 }
 
 .service-card-4 {
-  background: url("../img/cars.jpg") no-repeat top center;
+  background-image: url("../img/cars.jpg");
 }
 
 /* Секция Преимущества  */
@@ -411,7 +403,7 @@ img {
   justify-content: space-between;
 }
 
-.advantage-cards-item:nth-of-type(-n+4) {
+.advantage-cards-item:nth-of-type(n-4) {
   margin-bottom: 23px;
 }
 
@@ -430,7 +422,6 @@ img {
   padding-top: 116px;
   padding-bottom: 31px;
 }
-
 
 .advantage-card-1 {
   background-image: url("../img/icons/bathtub.png");
@@ -543,6 +534,8 @@ img {
 }
 
 .card-link-plug {
+  display: block;
+  position: relative;
   margin: auto 54px 27px auto;
   padding-right: 16px;
   font-weight: 500;
@@ -550,6 +543,16 @@ img {
   line-height: 40px;
   color: #fff;
   background: url("/img/bg/white-bracket.svg") no-repeat right center;
+}
+
+.card-link-plug::before {
+  content: '' ;
+  position: absolute;
+  display: block;
+  top: -370px;
+  left: -50px;
+  right: -50px;
+  bottom: -25px;
 }
 
 /* Секция Хочу тур */
