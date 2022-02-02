@@ -118,6 +118,9 @@ img {
   border-radius: 10px;
 }
 
+.submit-btn {
+  padding: 13px 30px;
+}
 /* ссылки */
 .extra-text {
   color: #999999;
@@ -371,16 +374,6 @@ img {
   position: relative;
 }
 
-.service-card-link::before {
-  content: '' ;
-  position: absolute;
-  display: block;
-  top: -200px;
-  left: -50px;
-  right: -270px;
-  bottom: -150px;
-}
-
 .service-card-1 {
   background-image: url("../img/exclusive.jpg");
 }
@@ -411,16 +404,10 @@ img {
   flex-direction: column;
   width: 275px;
   min-height: 275px;
-  padding-left: 45px;
+  padding: 116px 42px 31px 45px;
   background-color: #FFFFFF;
   background-position: left 45px top 40px;
   background-repeat: no-repeat;
-}
-
-.advantage-card-text {
-  max-width: 188px;
-  padding-top: 116px;
-  padding-bottom: 31px;
 }
 
 .advantage-card-1 {
@@ -542,7 +529,7 @@ img {
   font-size: 20px;
   line-height: 40px;
   color: #fff;
-  background: url("/img/bg/white-bracket.svg") no-repeat right center;
+  background: url("../img/bg/white-bracket.svg") no-repeat right center;
 }
 
 .card-link-plug::before {
@@ -563,9 +550,11 @@ img {
 }
 
 .choose-tour-form-container {
+  justify-content: space-between;
   width: 1080px;
   height: 106px;
   padding: 28px;
+  padding-left: 8px;
   margin: 0 auto;
   background-color: #FFFFFF;
 }
@@ -575,8 +564,8 @@ img {
   padding-left: 40px;
   margin-bottom: 19px;
 }
-
-.choose-tour-form-field:not(:last-child) {
+/* choose-form-fields-wrapper */
+.choose-tour-form-field {
   padding: 0 20px;
   border-right: 1px solid #E1E1E1;
 }
@@ -585,22 +574,33 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+}
+
+.form-label-wrap {
   margin-bottom: 15px;
 }
 
-/* .field-city {
-  width: 170px;
+.form-input {
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  outline: none;
 }
 
-.field-country {
-  width: 190px;
-}
-
-.field-nights,
-.field-people,
-.field-date {
+.form-small-field {
   width: 142px;
-} */
+}
+
+.field-city,
+.field-country  {
+  width: 180px;
+}
+
+.field-people,
+.field-nights {
+  width: 100px;
+  border-bottom: 1px solid #E1E1E1;
+}
 
 /* Секция Контакты */
 .address-section {
@@ -634,7 +634,7 @@ img {
 .adress-title,
 .adress-instruction {
   vertical-align: top;
-  padding-top: 25px;
+  padding: 20px 0;
 }
 
 .adress-title {
@@ -668,8 +668,11 @@ img {
   font-style: normal;
 }
 
+.address-table-btn {
+ padding-top: 45px;
+}
+
 .build-route-btn {
-  margin-top: 45px;
   padding: 27px 29px;
   font-weight: 700;
 }
@@ -685,14 +688,13 @@ img {
   background-color: #333333;
 }
 
-
 .footer-layout-col-1 {
   flex-wrap: wrap;
   width: 320px;
   margin-right: 102px;
 }
 
-.footer-layout-col-1-row-1 {
+.footer-layout-col-1-group {
   flex-direction: column;
   justify-content: space-between;
   height: 178px;
