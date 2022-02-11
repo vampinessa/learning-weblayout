@@ -1,0 +1,40 @@
+.page-section {
+  margin-bottom: 120px;
+}
+
+.page-section--theme-accent {
+  padding: 120px 0;
+  color: #FDFDFD;
+  background-color: #10B582;
+}
+
+.page-section__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-section__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 58px;
+  margin-bottom: 20px;
+}
+
+.page-section__description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.page-section__description:last-of-type{
+  margin-bottom: 50px;
+}
+
+.page-section__description--theme-accent {
+  line-height: 1.5;
+}
