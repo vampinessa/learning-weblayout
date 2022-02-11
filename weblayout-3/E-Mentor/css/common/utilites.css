@@ -1,0 +1,10 @@
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clear-fix {
+  font-size: 0;
+  line-height: 0;
+}
