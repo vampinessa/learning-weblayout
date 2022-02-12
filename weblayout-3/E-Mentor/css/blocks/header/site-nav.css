@@ -5,27 +5,23 @@
   align-items: center;
 }
 
-.site-nav__item {
-  margin-bottom: 16px;
-}
-
-.site-nav__item {
-  margin-right: 30px;
+.site-nav__item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .site-nav__link {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 500;
   text-decoration: none;
   color: inherit;
 }
 
 .site-nav__link:hover {
-  color: #FA9F42;
+  color: #fa9f42;
 }
 
 .site-nav__link--active {
-  border-bottom: 2px dashed #FA9F42;
+  border-bottom: 2px dashed #fa9f42;
 }
