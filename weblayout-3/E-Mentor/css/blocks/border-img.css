@@ -1,0 +1,19 @@
+.border-img--seconary {
+  border: 2px dashed #FA9F42;
+}
+
+.border-img--primary {
+  border: 2px dashed #FDFDFD;
+}
+
+.border-img__img--shift-left {
+  position: relative;
+  top: 30px;
+  left: -30px;
+}
+
+.border-img__img--shift-right {
+  position: relative;
+  top: 30px;
+  right: -30px;
+}
