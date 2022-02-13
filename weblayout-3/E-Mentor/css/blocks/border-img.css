@@ -1,3 +1,5 @@
+/* в сафари не работет свойство border-radius для outline */
+
 .border-img--seconary {
   border: 2px dashed #FA9F42;
 }
@@ -6,14 +8,25 @@
   border: 2px dashed #FDFDFD;
 }
 
-.border-img__img--shift-left {
+.border-img--shift-right  {
   position: relative;
-  top: 30px;
+  bottom: 28px;
+  left: 28px;
+}
+
+.border-img--shift-left{
+  position: relative;
+  right: 28px;
+}
+
+.border-img__img-left {
+  position: absolute;
+  bottom: -30px;
   left: -30px;
 }
 
-.border-img__img--shift-right {
-  position: relative;
-  top: 30px;
+.border-img__img-right  {
+  position: absolute;
+  bottom: -30px;
   right: -30px;
 }

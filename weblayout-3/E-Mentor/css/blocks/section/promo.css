@@ -12,32 +12,24 @@
   justify-content: space-between;
 }
 
-.promo__content-column--left {
-  padding-bottom: 32px;
-}
-
 .promo__content-column--center {
   text-align: center;
   justify-content: center;
 }
 
-.promo__img--shift-right {
-  margin-right: 30px;
-}
-
-.promo__img--shift-left {
- margin-left: 28px;
-}
-
 .promo__img {
+  margin: 0;
   width: 240px;
   height: 300px;
 }
 
 .promo__content {
   padding-top: 154px;
-  margin: 0 auto;
   width: 540px;
+}
+
+.promo__description {
+  margin: 0 auto;
 }
 
 .promo__link-down {

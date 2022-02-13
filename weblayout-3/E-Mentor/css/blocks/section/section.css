@@ -13,9 +13,13 @@
   justify-content: space-between;
 }
 
-.page-section__title {
+.page-section__title,
+.page-section__description {
   margin: 0;
   padding: 0;
+}
+
+.page-section__title {
   font-weight: 500;
   font-size: 58px;
   line-height: 58px;
@@ -23,8 +27,7 @@
 }
 
 .page-section__description {
-  margin: 0;
-  padding: 0;
+  width: 70%;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -37,4 +40,23 @@
 
 .page-section__description--theme-accent {
   line-height: 1.5;
+}
+
+.page-section__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.page-section__img {
+  margin-top: auto;
+}
+
+.page-section__img--right {
+  margin-bottom: 28px;
+}
+
+.page-section__img--left {
+  margin-right: 100px;
 }
