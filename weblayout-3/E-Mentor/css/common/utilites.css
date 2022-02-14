@@ -2,9 +2,18 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
+  line-height: 0;
 }
 
 .clear-fix {
   font-size: 0;
   line-height: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 1px solid rgb(85, 13, 119);
 }

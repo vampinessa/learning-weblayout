@@ -6,30 +6,18 @@
   min-height: 560px;
 }
 
-.promo__content-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.promo__content-column--center {
-  text-align: center;
+.promo__column--center {
   justify-content: center;
-}
-
-.promo__img {
-  margin: 0;
-  width: 240px;
-  height: 300px;
+  padding-top: 62px;
 }
 
 .promo__content {
-  padding-top: 154px;
-  width: 540px;
+  text-align: center;
 }
 
-.promo__description {
-  margin: 0 auto;
+.promo__img {
+  width: 240px;
+  height: 300px;
 }
 
 .promo__link-down {
