@@ -1,0 +1,29 @@
+.statistics__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistics__item {
+  width: 270px;
+  text-align: center;
+}
+
+.statistics__indicator {
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 58px;
+  color: #10b582;
+}
+
+.statistics__description {
+  margin: 0;
+  padding: 0 20px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #353A5A;
+}
