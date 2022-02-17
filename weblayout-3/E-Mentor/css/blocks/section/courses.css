@@ -1,0 +1,40 @@
+.courses__content {
+  width: 100%;
+  align-items: center;
+}
+
+.courses__title {
+  margin-bottom: 60px;
+}
+
+.courses__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.courses__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+}
+
+.courses__img {
+  margin-bottom: 15px;
+}
+
+.courses__link {
+  align-self: flex-start;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #353A5A;;
+}
