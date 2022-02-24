@@ -1,7 +1,10 @@
 .teachers__img-list {
   flex-direction: row;
   flex-wrap: wrap;
-  width: 570px;
+  width: 580px;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .teachers__card {
@@ -26,8 +29,8 @@
   display: block;
   text-align: center;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 13px;
   line-height: 1.3;
   color: #353a5a;
 }

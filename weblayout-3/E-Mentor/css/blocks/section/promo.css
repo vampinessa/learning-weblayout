@@ -40,3 +40,7 @@
   width: 22px;
   height: 126px;
   }
+
+  .promo__button {
+    align-self: center;
+  }
