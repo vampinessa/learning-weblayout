@@ -385,7 +385,7 @@ img {
 }
 
 .service-cards-wrapper {
-  padding: 191px 126px 50px 45px;
+  padding: 191px 100px 50px 45px;
   overflow: hidden;
   background-color: var(--primary-bg-color);
   background-position: top center;
@@ -497,7 +497,7 @@ img {
 
 .accommodation-card {
   width: 374px;
-  min-height: 440px;
+  height: 440px;
   background-color: var(--primary-bg-color);
 }
 
