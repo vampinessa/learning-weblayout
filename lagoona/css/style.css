@@ -274,7 +274,6 @@ img {
 .special-offer-desc {
   width: 573px;
   padding: 40px;
-  padding-right: 234px;
   color: var(--invert-text-color);
   background: linear-gradient(90deg, var(--gradient-first-color) -2.9%, var(--gradient-second-color) 65.7%);
   background-color: var(--card-bg-color);
@@ -286,11 +285,25 @@ img {
 
 .special-offer-big-card {
   height: 540px;
-  padding-top: 211px;
+}
+
+.small-card-desc {
+  height: 178px;
+}
+
+.big-card-desc{
+  height: 320px;
+}
+
+.special-offer-desc-wrapper {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .special-offer-title {
   margin-bottom: 15px;
+  max-width: 70%;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
@@ -298,13 +311,14 @@ img {
 
 .special-offer-big-card-title {
   margin-bottom: 15px;
+  max-width: 70%;
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
 }
 
 .special-offer-card-price {
-  margin-bottom: 47px;
+  margin-bottom: 45px;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -314,6 +328,14 @@ img {
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
+}
+
+.special-offer-link-text {
+  align-self: flex-start;
+  display: inline-block;
+  padding-right: 18px;
+  color: var(--promo-link-color);
+  background: url("../img/bg/gold-bracket.svg") no-repeat right center;
 }
 
 .promo-1 {
@@ -331,12 +353,7 @@ img {
               url("../img/lux.jpg") no-repeat;
 }
 
-.special-offer-link-text {
-  display: inline-block;
-  padding-right: 18px;
-  color: var(--promo-link-color);
-  background: url("../img/bg/gold-bracket.svg") no-repeat right center;
-}
+
 
 /* Секция О нас */
 .about-text-container {
@@ -531,6 +548,7 @@ img {
 }
 
 .plug-card {
+  position: absolute;
   align-items: center;
   background-color:   var(--card-bg-color);
   background-image: url("../img/hotels/gag.jpg");
