@@ -1,0 +1,27 @@
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-nav__link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-nav__link:hover {
+  color: #fa9f42;
+}
+
+.site-nav__link--active {
+  border-bottom: 2px dashed #fa9f42;
+}

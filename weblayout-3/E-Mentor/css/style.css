@@ -1,0 +1,56 @@
+
+@import "blocks/logo.css";
+@import "blocks/header/header.css";
+@import "blocks/header/main-nav.css";
+@import "blocks/header/site-nav.css";
+@import "common/cropping.css";
+@import "common/utilites.css";
+
+@import "blocks/button.css";
+@import "blocks/border-img.css";
+
+@import "blocks/social-media.css";
+@import "blocks/section/section.css";
+@import "blocks/section/promo.css";
+@import "blocks/section/promo-teachers.css";
+@import "blocks/teachers.css";
+@import "blocks/section/edu-format.css";
+@import "blocks/section/courses.css";
+@import "blocks/aside/aside.css";
+@import "blocks/section/statistic.css";
+@import "blocks/footer.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 1170px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #353a5a;
+  background-color: #ebebeb;
+
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.relevance__description {
+  width: 80%;
+}
+
+.relevance__img {
+  width: 500px;
+  height: 286px;
+}

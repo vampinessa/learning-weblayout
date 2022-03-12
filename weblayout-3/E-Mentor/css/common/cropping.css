@@ -1,0 +1,23 @@
+.cropping-top-left {
+  border-top-left-radius: 80px;
+}
+
+.cropping-top-right {
+  border-top-right-radius: 80px;
+}
+
+.cropping-bottom-left {
+  border-bottom-left-radius: 80px;
+}
+
+.cropping-bottom-right {
+  border-bottom-right-radius: 80px;
+}
+
+.cropping-top-left-lg {
+  border-top-left-radius: 120px;
+}
+
+.cropping-top-right-lg {
+  border-top-right-radius: 120px;
+}

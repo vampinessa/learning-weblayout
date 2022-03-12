@@ -1,0 +1,33 @@
+.aside {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 120px;
+  background-color: #fafafa;
+}
+
+.aside__bunner {
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+  height: 578px;
+  padding-left: 740px;
+}
+
+.banner__content {
+  width: 540px;
+  align-self: center;
+}
+
+.banner__description {
+  width: 80%;
+}
+
+.banner__img-1 {
+  background: linear-gradient(0deg, rgba(89, 96, 107, 0.3) -2.9%, rgba(199, 207, 219, 0) 65.7%), url("../../../img/banners/1.jpg") no-repeat left center;
+}
+
+.banner__img-2 {
+  background: linear-gradient(0deg, rgba(89, 96, 107, 0.3) -2.9%, rgba(199, 207, 219, 0) 65.7%), url("../../../img/banners/2.jpg") no-repeat left center;
+}

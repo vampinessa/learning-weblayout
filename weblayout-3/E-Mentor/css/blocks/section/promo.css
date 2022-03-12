@@ -1,0 +1,46 @@
+.promo {
+  padding-top: 55px;
+}
+
+.promo__container {
+  min-height: 560px;
+}
+
+.promo__column--center {
+  justify-content: center;
+  padding-top: 62px;
+}
+
+.promo__content {
+  text-align: center;
+}
+
+.promo__img {
+  width: 240px;
+  height: 300px;
+}
+
+.promo__link-down {
+  writing-mode: vertical-rl;
+  align-self: flex-end;
+  padding-bottom: 30px;
+  background: url("../../../img/arrow/down.svg") no-repeat center bottom;
+}
+
+.promo__link-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+.promo__social {
+  display: flex;
+  width: 22px;
+  height: 126px;
+  }
+
+  .promo__button {
+    align-self: center;
+  }

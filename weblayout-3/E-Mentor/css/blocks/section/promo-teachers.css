@@ -1,0 +1,7 @@
+.promo-teachers__content {
+  justify-content: flex-start;
+}
+
+.promo-teachers__description {
+  max-width: 80%;
+}

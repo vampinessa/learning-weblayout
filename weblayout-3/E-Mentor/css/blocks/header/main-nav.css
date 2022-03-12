@@ -1,0 +1,11 @@
+.main-nav {
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav--prolapse-logo {
+  color: #fdfdfd;
+  background-color: #10B582;
+}
