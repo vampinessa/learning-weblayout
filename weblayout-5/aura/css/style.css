@@ -8,6 +8,22 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --light-bg-color: #ffffff;
+  --invert-bg-color: #07060B;
+  --accent-bg-color: #D13130;
+  --accent-seconary-color: #FF6F6F;;
+  --bg-card: #EDEDF2;
+  --bg-aside: #37373E;
+  --primary-btn-color: #46F4DB;
+  --primary-btn-active-color: #57D272;
+  --btn-gradient: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
+  --form-text-color: #95959D;
+  --form-input-text: #717178;
+  --br-primery: 40px;
+  --br-secondary: 23px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -37,6 +53,10 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+body {
+  max-width: 1920px;
 }
 
 .container {
