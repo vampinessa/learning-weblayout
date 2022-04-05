@@ -53,8 +53,9 @@ html {
   --btn-gradient: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
   --form-text-color: #95959D;
   --form-input-text: #717178;
-  --br-primery: 40px;
-  --br-secondary: 23px;
+  --bradius-primery: 40px;
+  --bradius-secondary: 23px;
+  --btn-primary-border: 5px solid #46F4DB;
 }
 
 a {
@@ -85,7 +86,6 @@ img {
 .list-reset {
   margin: 0;
   padding: 0;
-  font-size: 0;
   line-height: 0;
   list-style: none;
 }
@@ -102,6 +102,74 @@ body {
   margin: 0 auto;
   padding: 0 12px;
   max-width: 1304px;
+}
+
+.btn-reset {
+  display: inline-block;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 25px 54px;
+  border: none;
+  border-radius: var(--bradius-primery);
+}
+
+.btn--primary {
+  background-color: var(--primary-btn-color);
+}
+
+.btn--primary--accent {
+  background: var(--btn-gradient);
+}
+
+.btn--secondary{
+  padding: 20px 49px;
+  background-color: transparent;
+  border: var(--btn-primary-border);
+}
+
+.btn--secondary--accent {
+  color: var(--light-bg-color);
+}
+
+.btn--additional {
+  padding: 17px 31.5px;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--light-bg-color);
+  background-color: var(--dark-bg-color);
+  border-radius: 77px;
+}
+
+.slider-btn {
+  padding: 8px 21px;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--light-bg-color);
+  background-color: transparent;
+  border: 2px solid var(--accent-bg-color);
+  border-radius: var(--bradius-primery);
+}
+
+.slider-btn--active {
+  background-color: var(--accent-bg-color);
+}
+
+.btn--lg {
+  padding: 25px 74px;
+}
+
+.btn--xl {
+  padding: 20px 75px;
 }
 
 .nav-list {
