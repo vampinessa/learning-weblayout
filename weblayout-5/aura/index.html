@@ -68,42 +68,47 @@
             </div>
         </section>
 
-        <section class="auction page-section">
+        <section class="auction-promo page-section">
             <div class="container">
-                <h2 class="page-section__title auction__title">
+                <h2 class="page-section__title auction-promo__title">
                     Аукцион
-                    <span class="auction__status">Live auction</span>
+                    <span class="auction-promo__title-status">Live auction</span>
                 </h2>
-                <div class="auction__content">
-                    <img class="auction__img stiker-img stiker-img--large" src="img/stickers/witcher-3-1.png"  height="460" alt="Стикер Witcher">
-                    <div class="auction__desription">
-                        <div class="auction__onwer sticker-onwer">
-                            <img class="sticke-onwer__img userpic userpic--middle" src="img/userpics/serge.png" height="48" alt="Serge_VM222">
-                            <p class="sticker-onwer__name username username--small">Serge_VM222</p>
+                <div class="auction-promo__content">
+                    <img class="auction-promo__img stiker-img stiker-img--large" src="img/stickers/witcher-3-1.png"  height="460" alt="Стикер Witcher">
+                    <div class="auction-promo__desription">
+                        <div class="auction-promo__onwer auction__onwer sticker-onwer">
+                            <img class="sticker-onwer__img--middle userpic userpic--middle" src="img/userpics/serge.png" height="48" alt="Serge_VM222">
+                            <p class="sticker-onwer__name username username--middle">Serge_VM222</p>
                         </div>
 
-                        <h3 class="auction__title sticker-title">Witcherrr_3 (xml_t5)</h3>
+                        <h3 class="auction-promo-sticker__title sticker">Witcherrr_3 (xml_t5)</h3>
+                        <div class="auction-promo__bet-wrapper">
+                            <div class="auction-promo__bet">
+                                <p class="auction-bet__caption">Ставка:</p>
+                                <p class="auction-bet__price">0.10 ETH</p>
+                                <p class="auction-bet__dollar-price">$351.24</p>
+                            </div>
 
-                        <div class="auction__bet">
-                            <p class="auction-bet__caption">Ставка:</p>
-                            <p class="auction-bet__price">0.10 ETH</p>
-                            <p class="auction-bet__dollar-price">$351.24</p>
+                            <div class="auction-promo__countdown countdown">
+                                <p class="countdown__caption">Окончание через:</p>
+                                <div class="countdown__content">
+                                    <div class="countdown__part">
+                                        <span class="countdown__time">01</span>
+                                        <span class="countdown__datails">Час</span>
+                                    </div>
+                                    <div class="countdown__part">
+                                        <span class="countdown__time">48</span>
+                                        <span class="countdown__datails">Мин</span>
+                                    </div>
+                                    <div class="countdown__part">
+                                        <span class="countdown__time">47</span>
+                                        <span class="countdown__datails">Сек</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="auction__countdown">
-                            <p class="countdown__caption">Окончание через:</p>
-                            <dl class="countdown__list">
-                                <dt class="countdown__time">01</dt>
-                                <dd class="countdown__datails">Час</dd>
-
-                                <dt class="countdown__time">48</dt>
-                                <dd class="countdown__datails">Мин</dd>
-
-                                <dt class="countdown__time">47</dt>
-                                <dd class="countdown__datails">47</dd>
-                            </dl>
-                        </div>
-                        <button class="btn auction__btn btn--primary btn--lg" type="button">Cделать ставку</button>
+                        <button class="btn auction-promo__btn btn--primary btn--lg" type="button">Cделать ставку</button>
                     </div>
                 </div>
             </div>
@@ -119,7 +124,7 @@
                                 <img class="auction__img stiker-img stiker-img--small" src="img/stickers/alien.png"  height="160" alt="Стикер Alien (green)r">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/frank.png" height="24" alt="Frank.Nagval">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/frank.png" height="24" alt="Frank.Nagval">
                                         <p class="sticker-onwer__name username username--small">Frank.Nagval</p>
                                     </div>
 
@@ -134,10 +139,10 @@
                     <li class="auctions__item">
                         <article class="auction__card">
                             <div class="auction-card__content">
-                                <img class="auction__img astiker-img astiker-img--small" src="img/stickers/cobra_007.png"  height="160" alt="Стикер CoBRRRa">
+                                <img class="auction__img stiker-img stiker-img--small" src="img/stickers/cobra_007.png"  height="160" alt="Стикер CoBRRRa">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/cph.png" height="24" alt="CPH_777">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/cph.png" height="24" alt="CPH_777">
                                         <p class="sticker-onwer__name username username--small">CPH_777</p>
                                     </div>
 
@@ -155,7 +160,7 @@
                                 <img class="auction__img astiker-img astiker-img--small" src="img/stickers/diamonds.png"  height="160" alt="Стикер Diamonds">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/supah.png" height="24" alt="sUpah_kiLLah2">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/supah.png" height="24" alt="sUpah_kiLLah2">
                                         <p class="sticker-onwer__name username username--small">sUpah_kiLLah2</p>
                                     </div>
 
@@ -173,7 +178,7 @@
                                 <img class="auction__img astiker-img astiker-img--small" src="img/stickers/holofobia-2.png"  height="160" alt="Стикер Holofobia-2">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/ttgs.png" height="24" alt="ttgs">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/ttgs.png" height="24" alt="ttgs">
                                         <p class="sticker-onwer__name username username--small">ttgs</p>
                                     </div>
 
@@ -191,7 +196,7 @@
                                 <img class="auction__img astiker-img stiker-img--small" src="img/stickers/baby_yoda_1.png"  height="160" alt="Стикер Baby Yoda">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/peppe.png" height="24" alt="Peppppe222">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/peppe.png" height="24" alt="Peppppe222">
                                         <p class="sticker-onwer__name username username--small">Peppppe222</p>
                                     </div>
 
@@ -209,7 +214,7 @@
                                 <img class="auction__img stiker-img stiker-img--small" src="img/stickers/alien_vs_predator-1.png"  height="160" alt="Стикер alien vs. predator">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/1300e.png" height="24" alt="1300e1440">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/1300e.png" height="24" alt="1300e1440">
                                         <p class="sticker-onwer__name username username--small">1300e1440</p>
                                     </div>
 
@@ -227,7 +232,7 @@
                                 <img class="auction__img stiker-img stiker-img--small" src="img/stickers/iamdecepticon.png"  height="160" alt="Стикер IAMDECEPTICON">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/robert.png" height="24" alt="Robert_Wward2">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/robert.png" height="24" alt="Robert_Wward2">
                                         <p class="sticker-onwer__name username username--small">Robert_Wward2</p>
                                     </div>
 
@@ -245,7 +250,7 @@
                                 <img class="auction__img stiker-img stiker-img--small" src="img/stickers/ghostbusters-1_1.png"  height="160" alt="Стикер Ghostbusterrrrrrrs">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/ttggss.png" height="24" alt="ttgs">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/ttggss.png" height="24" alt="ttgs">
                                         <p class="sticker-onwer__name username username--small">ttgs</p>
                                     </div>
 
@@ -263,7 +268,7 @@
                                 <img class="auction__img stiker-img stiker-img--small" src="img/stickers/witcher-3-1.png"  height="160" alt="Стикер Witcher">
                                 <div class="auction__desription auction-card__description">
                                     <div class="auction__onwer sticker-onwer">
-                                        <img class="auction-onwer__img sticker-onwer__img userpic userpic--small" src="img/userpics/serge.png" height="24" alt="Serge_VM222">
+                                        <img class="auction-onwer__img sticker-onwer__img--small userpic userpic--small" src="img/userpics/serge.png" height="24" alt="Serge_VM222">
                                         <p class="sticker-onwer__name username username--small">Serge_VM222</p>
                                     </div>
 
@@ -371,7 +376,7 @@
                             </div>
                             <div class="top-sales__desription">
                                 <div class="top-sales__onwer sticker-onwer">
-                                    <img class="sticker-onwer__img userpic userpic--small" src="img/userpics/ttgs.png" height="24" alt="ttgs">
+                                    <img class="sticker-onwer__img--small userpic userpic--small" src="img/userpics/ttgs.png" height="24" alt="ttgs">
                                     <p class="sticker-onwer__name username username--small">ttgs</p>
                                 </div>
 
@@ -388,7 +393,7 @@
                             </div>
                             <div class="top-sales__desription">
                                 <div class="top-sales__onwer sticker-onwer">
-                                    <img class="sticker-onwer__img userpic userpic--small" src="img/userpics/tat-2.png" height="24" alt="Tat_2">
+                                    <img class="sticker-onwer__img--small userpic userpic--small" src="img/userpics/tat-2.png" height="24" alt="Tat_2">
                                     <p class="sticker-onwer__name username username--small">Tat_2</p>
                                 </div>
 
@@ -405,7 +410,7 @@
                             </div>
                             <div class="top-sales__desription">
                                 <div class="top-sales__onwer sticker-onwer">
-                                    <img class="sticker-onwer__img userpic userpic--small" src="img/userpics/cris22.png" height="24" alt="Chris22">
+                                    <img class="sticker-onwer__img--small userpic userpic--small" src="img/userpics/cris22.png" height="24" alt="Chris22">
                                     <p class="sticker-onwer__name username username--small">Chris22</p>
                                 </div>
 
@@ -422,7 +427,7 @@
                             </div>
                             <div class="top-sales__desription">
                                 <div class="top-sales__onwer sticker-onwer">
-                                    <img class="sticker-onwer__img userpic userpic--small" src="img/userpics/oswaald.png" height="24" alt="Oswaald">
+                                    <img class="sticker-onwer__img--small userpic userpic--small" src="img/userpics/oswaald.png" height="24" alt="Oswaald">
                                     <p class="sticker-onwer__name username username--small">Oswaald</p>
                                 </div>
 
@@ -438,7 +443,7 @@
                             </div>
                             <div class="top-sales__desription">
                                 <div class="top-sales__onwer sticker-onwer">
-                                    <img class="sticker-onwer__img userpic userpic--small" src="img/userpics/paul-22.png" height="24" alt="Paul-22">
+                                    <img class="sticker-onwer__img--small userpic userpic--small" src="img/userpics/paul-22.png" height="24" alt="Paul-22">
                                     <p class="sticker-onwer__name username username--small">Paul-22</p>
                                 </div>
 
@@ -455,7 +460,7 @@
                             </div>
                             <div class="top-sales__desription">
                                 <div class="top-sales__onwer sticker-onwer">
-                                    <img class="sticker-onwer__img userpic userpic--small" src="img/userpics/wardxxx.png" height="24" alt="wardxxx">
+                                    <img class="sticker-onwer__img--small userpic userpic--small" src="img/userpics/wardxxx.png" height="24" alt="wardxxx">
                                     <p class="sticker-onwer__name username username--small">wardxxx</p>
                                 </div>
 
