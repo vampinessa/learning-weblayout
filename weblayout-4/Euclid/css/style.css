@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("Montserrat"),
+        local("Montserrat Regular"),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("Montserrat"),
+        local("Montserrat Medium"),
+        url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("../fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local("Montserrat"),
+        local("Montserrat SemiBold"),
+        url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local("Montserrat"),
+        local("Montserrat Bold"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: local("Montserrat"),
+        local("Montserrat ExtraBold"),
+        url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+:root {
+  --basic-dark: #333;
+  --basic-light: #fff;
+  --basic-invert: #cacaca;
+  --text-hint: #adadad;
+  --basic-accent: #ff9900;
+  --basic-hover: rgba(255, 153, 0, 0.7);
+  --basic-active: #e1670e;
+  --bg-light:  #e5e5e5;
+  --bg-dark: #222;
+  --bg-dark-primery: #414141;
+  --bg-dark-secondary: #666;
+  --bg-basic-social: #7c7c7c;
+  --bg-underline: #dcdcdc;
+  --bg-decorative: #ececec;
+  --bg-img: #3b4c7c;
+  --basic-checked: #97ee3f;
+  --basic-gap: 32px;
+}
+
+
+.page {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-body {
+  min-width: 1800px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--basic-dark);
+  background-color: var(--basic-light);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1800px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.clear-fix {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo__img--primary {
+  fill: black;
+}
+
+.basic-text,
+.main-title,
+.primery-title,
+.secondary-title,
+.subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+.basic-text:not(:last-child) {
+  margin-bottom: var(--basic-gap);
+}
+
+.main-title {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+}
+
+.primery-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.secondary-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.page-section {
+  margin-bottom: 100px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 38px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-light);
+  background-color: var(--basic-accent);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn--accent {
+  font-weight: 400;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid var(--basic-dark);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  border: 3px solid var(--basic-accent);
+}
