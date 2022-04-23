@@ -107,6 +107,7 @@ img {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1800px;
+  overflow: hidden;
 }
 
 .list-reset {
@@ -209,3 +210,129 @@ img {
   background-color: transparent;
   border: 3px solid var(--basic-accent);
 }
+
+/* header */
+.main-header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: var(--basic-light);
+  z-index: 1000;
+}
+
+.page-main {
+  padding-top: 100px;
+}
+
+.shadow {
+  box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+
+.main-header__container {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  left: -1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__item {
+  margin-right: 85px;
+}
+
+.main-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--basic-dark);
+}
+
+.search-icon {
+  fill: var(--basic-light);
+  stroke: var(--basic-dark);
+}
+
+/* hero section */
+.swiper-container {
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-img);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 30px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child),
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: var(--basic-light);
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.hero__content {
+  position: absolute;
+  content: "";
+  z-index: 11;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+  height: 520px;
+  padding-top: 100px;
+  padding-left: 80px;
+  color: var(--basic-light);
+}
+
+.hero__title {
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+}
+
+.hero__btn {
+  align-self: flex-start;
+  min-width: 280px;
+  min-height: 78px;
+  margin-top: auto;
+  padding: 25px 37px;
+  font-size: 23px;
+  line-height: 29px;
+}
+
+/* about section */
