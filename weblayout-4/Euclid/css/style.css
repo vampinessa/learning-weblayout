@@ -143,8 +143,12 @@ img {
   overflow: hidden;
 }
 
+.logo__img {
+  fill: var(--basic-light);
+}
+
 .logo__img--primary {
-  fill: black;
+  fill: #000;
 }
 
 .basic-text,
@@ -226,6 +230,7 @@ img {
   height: 100px;
   position: fixed;
   background-color: var(--basic-light);
+  opacity: 0.97;
   z-index: 1000;
 }
 
@@ -410,7 +415,7 @@ img {
 }
 
 .about-features--decor-1 {
-  background-image: url("../img/decorative/pavkage.svg");
+  background-image: url("../img/decorative/package.svg");
 }
 
 .about-features--decor-2 {
@@ -422,7 +427,6 @@ img {
 }
 
 /* stages section */
-
 .stages__title {
   margin-bottom: 46px;
 }
@@ -480,3 +484,234 @@ img {
 .stages__link:not(:last-child) {
   margin-right: 29px;
 }
+
+/* faq sectiom */
+
+.faq__title {
+  margin-bottom: 42px;
+}
+
+.faq-accordion__item {
+  padding: 30px 0;
+  border-top: 1px solid var(--basic-invert);
+}
+
+.faq-accordion__item:last-of-type{
+  border-bottom: 1px solid var(--basic-invert);
+}
+
+.ui-accordion .ui-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.ui-accordion-header {
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+.ui-state-default{
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  color: var(--basic-dark);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ui-icon {
+  display: none;
+}
+
+.faq__btn {
+  margin-left: auto;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-light);
+  border-radius: 50%;
+}
+
+.ui-state-active {
+  transition: background-color 0.8s ease-in-out;
+}
+
+.faq__btn:before,.faq__btn:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: 10px;
+  width: 31px;
+  height: 1px;
+  background-color: var(--bg-dark-secondary);
+}
+
+.faq__btn:before {
+  transform: rotate(90deg);
+}
+
+.faq__btn:after {
+  transform: rotate(180deg);
+}
+
+.ui-state-active .faq__btn:before {
+  transform: rotate(45deg);
+}
+
+.ui-state-active .faq__btn:after {
+  transform: rotate(-45deg);
+}
+
+.ui-accordion .ui-accordion-content {
+  max-width: 1005px;
+  padding: 20px 0 0 0;
+  border: 0;
+  overflow: auto;
+}
+
+.ui-helper-reset {
+  line-height: 32px;
+}
+
+.ui-widget {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.faq-accordion__text {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.faq__text-accent {
+  color: var(--basic-invert);
+  margin: 0 6px 0 7px;
+}
+
+/* footer  */
+.page-footer {
+  color: var(--basic-invert);
+  background-color: var(--bg-dark);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__navigation {
+  margin-right: 351px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  margin-bottom: 90px;
+}
+
+.footer-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--basic-invert);
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item:not(:last-of-type) {
+  margin-right: 25px;
+}
+
+.footer__form {
+  margin-right: auto;
+}
+
+.footer-form__title {
+  margin-bottom: 25px;
+}
+
+.footer-form__container {
+  width: 570px;
+}
+
+.footer-form__textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  border: none;
+}
+
+.form__input {
+  margin: 0;
+  padding: 14px 24px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  border: none;
+}
+
+.footer-form__input {
+  color: var(--basic-invert);
+  background-color: var(--bg-dark-primery);
+}
+
+input::placeholder {
+  color: var(--basic-invert);
+}
+
+textarea::placeholder {
+  color: var(--basic-invert);
+}
+
+.form__field {
+  margin-bottom: 25px;
+}
+
+.footer-form__textarea {
+  height: 150px;
+}
+
+.form__fields-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 7px;
+}
+
+
+.footer-form__btn {
+  padding: 19px 52px ;
+  margin-right: 22px;
+}
+
+.form__checkbox {
+  margin-right: 5px;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text__container {
+  align-self: center;
+  width: 363px;
+}
+
+
