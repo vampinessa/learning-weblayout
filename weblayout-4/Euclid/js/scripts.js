@@ -30,4 +30,11 @@ $(".faq-accordion").accordion ({
     heightStyle: "content",
     collapsible: true,
     active: false
-  });
+});
+
+
+$(".faq-accordion__border").hover(
+    function(){ $(this).addClass("faq-accordion__border--active"); },
+    function(){ $(this).removeClass("faq-accordion__border--active"); }
+);
+
