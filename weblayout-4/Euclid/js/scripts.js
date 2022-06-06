@@ -33,8 +33,17 @@ $(".faq-accordion").accordion ({
 });
 
 
-$(".faq-accordion__border").hover(
-    function(){ $(this).addClass("faq-accordion__border--active"); },
-    function(){ $(this).removeClass("faq-accordion__border--active"); }
-);
+$(".faq-accordion__border").hover(function(){
+    $(this).toggleClass("faq-accordion__border--active");
+});
 
+$(".search-form__btn--open").click(function(){
+    $(this).removeClass("search-form__btn--open-ico");
+    $(".search-form").addClass("search-form--active");
+    $(".search-form__input").focus();
+  });
+
+$(".search-form__btn--close").click(function(){
+    $(".search-form__btn--open").addClass("search-form__btn--open-ico");
+    $(".search-form").removeClass("search-form--active");
+});

@@ -71,27 +71,16 @@
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="page.html">Контакты</a>
                         </li>
-
                     </ul>
-                </nav>
-                <div class="header__search clear-fix">
-                    <form class="search-form visually-hidden" name="search-form" action="https://postman-echo.com/get" method="get">
-                        <label class="search-form__label visually-hidden" for="search-field-id">Поиск по сайту</label>
-                        <input class="search-form__input" type="text" placeholder="Что будем искать?" name="search-field" id="search-field-id">
-                        <button class="search-form__button btn-reset" type="submit"></button>
+                    <button class="search-form__btn--open search-form__btn--open-ico btn-reset" type="button"></button>
+                    <form class="search-form header__search"  name="search-form" action="https://postman-echo.com/get" method="get">
+                        <label class="search-form__label" for="search-field-id">Поиск по сайту</label>
+                        <input class="search-form__input" type="search" placeholder="Что будем искать?" name="search-field" id="search-field-id" required>
+                        <button class="search-form__btn--search btn-reset search-form__ico search-form__ico--submit" type="submit"></button>
+                        <button class="search-form__btn--close btn-reset search-form__ico search-form__ico--close" type="button"></button>
                     </form>
+                </nav>
 
-                    <button class="btn-reset search-icon__btn" type="button">
-                        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-                            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" />
-                            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"  stroke-width="2"/>
-                            </svg>
-                        <span class="search__btn--text visually-hidden">Поиск по сайту</span>
-                    </button>
-                    <button class="close-form-btn btn-reset" type="button">
-                        <span class="search-icon__btn--text visually-hidden">Закрыть</span>
-                    </button>
-                </div>
             </div>
         </div>
     </header>
