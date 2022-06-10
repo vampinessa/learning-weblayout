@@ -71,11 +71,8 @@
   --bg-img: #3b4c7c;
   --basic-checked: #97ee3f;
   --basic-gap: 32px;
-  --color-transition: color .45s ease-in-out;
-  --bg-transition: background-color .3s ease-in-out;
-  --border-transition: border-color .3s ease-in-out;
-  --opacity-transition: opacity .3s ease-in-out;
-  --fill-transition: fill .3s ease-in-out;
+  --fast-transition: .3s ease-in-out;
+  --medium-transition: .5s ease-in-out;
 }
 
 
@@ -218,67 +215,63 @@ img {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: var(--bg-transition);
+  transition: background-color var(--fast-transition);
 }
 
 .btn--accent {
   padding: 19px 37px;
   font-weight: 400;
-  color: inherit;
+  color: var(--bg-dark);
   background-color: transparent;
   border: 1px solid var(--basic-dark);
-  transition: var(--bg-transition) var(--border-transition);
+  transition: color var(--medium-transition), background-color var(--medium-transition);
 }
+
 
 .btn--secondary {
   background-color: transparent;
   border: 3px solid var(--basic-accent);
-  transition: var(--bg-transition) var(--border-transition);
+  transition: border var(--fast-transition);
 }
 
-.btn:focus {
+.btn:focus,
+.btn:hover {
   outline: none;
   background-color: var(--basic-hover);
-}
-
-.btn:hover {
-  background-color: var(--basic-hover);
+  transition: background-color var(--fast-transition);
 }
 
 .btn:active {
   background-color: var(--basic-active);
+  transition: background-color var(--fast-transition);
 }
 
-.btn--secondary:focus {
-  background-color: var(--basic-accent);
-}
-
+.btn--secondary:focus,
 .btn--secondary:hover {
   background-color: var(--basic-accent);
+  transition: background-color var(--fast-transition);
 }
 
 .btn--secondary:active {
   border-color: var(--basic-active);
   background-color: var(--basic-active);
+  transition: background-color var(--fast-transition), border-color var(--fast-transition);
 }
 
-.btn--accent:focus {
+.btn--accent:focus,
+.btn--accent:hover {
   color: var(--basic-light);
   border-color: var(--bg-dark-secondary);
   background-color: var(--bg-dark-secondary);
-}
-
-.btn--accent:hover {
-  color: var(--basic-light);
-  background-color: var(--bg-dark-secondary);
+  transition: color var(--fast-transition), background-color var(--medium-transition);
 }
 
 .btn--accent:active {
   color: var(--basic-light);
-  border-color: #000;
-  background-color: #000;
+  border-color: var(--bg-dark);
+  background-color: var(--bg-dark);
+  transition: color var(--fast-transition), background-color var(--fast-transition);
 }
-
 
 /* header */
 .main-header {
@@ -335,7 +328,7 @@ img {
   font-size: 18px;
   line-height: 22px;
   color: var(--basic-dark);
-  transition: var(--opacity-transition);
+  transition: opacity var(--fast-transition);
 }
 
 .main-nav__link::before {
@@ -347,7 +340,7 @@ img {
   bottom: -5px;
   border: 2px solid var(--basic-accent);
   opacity: 0;
-  transition: var(--opacity-transition);
+  transition: opacity var(--fast-transition);
 }
 
 .main-nav__link::after {
@@ -359,7 +352,7 @@ img {
   bottom: -7px;
   border-bottom: 2px solid var(--basic-accent);
   opacity: 0;
-  transition: var(--opacity-transition);
+  transition: opacity var(--fast-transition);
 }
 
 .main-nav__link:focus {
@@ -407,7 +400,7 @@ img {
   background-repeat: no-repeat;
   background-position: center left;
   background-image: url("../img/decorative/search.svg");
-  transition: background-image .5s ease-in-out;
+  transition: background-image var(--fast-transition);
 }
 
 .search-form__btn--open-ico:hover::after {
@@ -476,7 +469,7 @@ img {
   top: 18px;
   background-repeat: no-repeat;
   background-position: center left;
-  transition: background-image 0.5s ease-in-out;
+  transition: background-image var(--medium-transition);
 }
 
 .search-form__ico::before {
@@ -488,7 +481,7 @@ img {
   left: -5px;
   border: 2px solid var(--basic-accent);
   opacity: 0;
-  transition: var(--opacity-transition);
+  transition: opacity var(--fast-transition);
 }
 
 .search-form__ico--submit {
@@ -699,7 +692,7 @@ img {
   left: -5px;
   border: 2px solid var(--basic-accent);
   opacity: 0;
-  transition: var(--opacity-transition);
+  transition: opacity var(--fast-transition);
 }
 .stages-tabs__btn:hover {
   color: var(--basic-accent);
@@ -763,7 +756,7 @@ img {
 
 .faq-accordion__border {
   border-top: 1px solid var(--basic-invert);
-  transition: var(--border-transition);
+  transition: border var(--fast-transition);
 }
 
 .faq-accordion__border:last-child{
@@ -808,11 +801,11 @@ img {
   background: transparent;
   font-weight: 700;
   color: var(--basic-dark);
-  transition: background-color 0.3s ease-in-out;
+  transition: color var(--medium-transition);
 }
 
 .ui-state-active {
-  transition: background-color 0.8s ease-in-out;
+  transition: color var(--medium-transition);
 }
 
 .ui-icon {
@@ -826,6 +819,7 @@ img {
   height: 50px;
   background-color: var(--bg-light);
   border-radius: 50%;
+  transition: background-color var(--medium-transition);
 }
 
 .faq__btn:before,
@@ -837,6 +831,7 @@ img {
   width: 31px;
   height: 1px;
   background-color: var(--bg-dark-secondary);
+  transition: background-color var(--medium-transition);
 }
 
 .faq__btn:before {
@@ -901,10 +896,12 @@ img {
 .ui-accordion-header:hover .faq__btn::before,
 .ui-accordion-header:hover .faq__btn::after {
   background-color: var(--basic-light);
+  transition: background-color var(--medium-transition);
 }
 
 .ui-accordion  .faq-accordion__item  > .ui-accordion-header:hover {
   border-color: var(--basic-accent);
+  transition: border-color var(--medium-transition);
 }
 
 /* footer  */
@@ -939,7 +936,7 @@ img {
   font-size: 18px;
   line-height: 36px;
   color: var(--basic-invert);
-  transition: var(--color-transition);
+  transition: color var(--fast-transition);
 }
 
 .footer-nav__link::before {
@@ -979,7 +976,7 @@ img {
 .social__link {
   position: relative;
   fill: var(--bg-basic-social);
-  transition: var(--fill-transition);
+  transition: fill var(--fast-transition);
 }
 
 .social__link::before {
