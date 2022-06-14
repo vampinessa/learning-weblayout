@@ -672,13 +672,19 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-.swiper-pagination-bullet:hover {
+.swiper-pagination-bullet:focus-visible,
+.swiper-pagination-bullet:hover  {
+  outline: none;
   padding: 10px 23px;
   background-color: var(--accent-seconary-color);
   border: none;
   transition: background-color 0.3s ease-in-out;
 }
 
-.swiper-pagination-bullet-active:hover {
+.swiper-pagination-bullet:focus-visible,
+.swiper-pagination-bullet:hover   {
   padding: 10px 25px;
 }
+
+/* subsribe */
+
