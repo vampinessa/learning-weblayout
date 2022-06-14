@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura - Площадка для реализации криптостикеров. Главная страница.</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
@@ -277,32 +278,28 @@
                 <h2 class="page-section__title new__title">Новые стикеры</h2>
                 <div class="new__slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="new__stickers">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/ghost-1.png" height="300" alt="Sticker Ghost">
-                                <img class="new__sticker sticker-img  sticker-img--md" src="/img/stickers/ghost-2.png" height="300" alt="Sticker Ghost">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/parental-advisory.png" height="300" alt="Sticker Parental Advisory">
-                            </div>
-                            <div class="new__stickers visually-hidden">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/chromeisdead.png" height="300" alt="Sticker Chrome is dead">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/infinity-8-1.png" height="300" alt="Sticker Infinity">
-                            </div>
-                            <div class="new__stickers visually-hidden">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/iamdesigner.png" height="300" alt="Sticker IAMDESIGNER Circle">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/global-30.png" height="300" alt="Sticker Global 30">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/justman.png" height="300" alt="Sticker Man">
-                            </div>
-                            <div class="new__stickers visually-hidden">
-                                <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/newwave.png" height="300" alt="Sticker New Wave">
-                            </div>
+                        <div class="new__stickers swiper-slide">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/ghost-1.png" height="300" alt="Sticker Ghost">
+                            <img class="new__sticker sticker-img  sticker-img--md" src="/img/stickers/ghost-2.png" height="300" alt="Sticker Ghost">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/parental-advisory.png" height="300" alt="Sticker Parental Advisory">
                         </div>
-                        <div class="swiper-slide__btn">
-                            <button class="btn slider__btn slider-btn slider-btn--active btn-small" type="button">1</button>
-                            <button class="btn slider__btn slider-btn btn-small" type="button">2</button>
-                            <button class="btn slider__btn slider-btn btn-small" type="button">3</button>
-                            <button class="btn slider__btn slider-btn btn-small" type="button">4</button>
+
+                        <div class="new__stickers swiper-slide">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/chromeisdead.png" height="300" alt="Sticker Chrome is dead">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/infinity-8-1.png" height="300" alt="Sticker Infinity">
+                        </div>
+
+                        <div class="new__stickers swiper-slide">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/iamdesigner.png" height="300" alt="Sticker IAMDESIGNER Circle">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/global-30.png" height="300" alt="Sticker Global 30">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/justman.png" height="300" alt="Sticker Man">
+                        </div>
+
+                        <div class="new__stickers swiper-slide">
+                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/newwave.png" height="300" alt="Sticker New Wave">
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -504,6 +501,7 @@
             <span class="footer-copiright__text">AURA&copy; | 2021</span>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
