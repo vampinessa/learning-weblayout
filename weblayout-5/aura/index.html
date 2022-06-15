@@ -117,7 +117,7 @@
 
         <section class="auctions-catalogue page-section">
             <div class="container">
-                <h2 class="page-section__title auctions-catalogue__title">Другие аукционы</h2>
+                <h2 class="secondary-title auctions-catalogue__title">Другие аукционы</h2>
                 <ul class="auctions__list list-reset">
                     <li class="auctions__item">
                         <article class="auction__card auction-card__content">
@@ -279,24 +279,24 @@
                 <div class="new__slider">
                     <div class="swiper-wrapper">
                         <div class="new__stickers swiper-slide">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/ghost-1.png" height="300" alt="Sticker Ghost">
-                            <img class="new__sticker sticker-img  sticker-img--md" src="/img/stickers/ghost-2.png" height="300" alt="Sticker Ghost">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/parental-advisory.png" height="300" alt="Sticker Parental Advisory">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/ghost-1.png" height="300" alt="Sticker Ghost">
+                            <img class="new__sticker sticker-img  sticker-img--md" src="img/stickers/ghost-2.png" height="300" alt="Sticker Ghost">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/parental-advisory.png" height="300" alt="Sticker Parental Advisory">
                         </div>
 
                         <div class="new__stickers swiper-slide">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/chromeisdead.png" height="300" alt="Sticker Chrome is dead">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/infinity-8-1.png" height="300" alt="Sticker Infinity">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/chromeisdead.png" height="300" alt="Sticker Chrome is dead">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/infinity-8-1.png" height="300" alt="Sticker Infinity">
                         </div>
 
                         <div class="new__stickers swiper-slide">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/iamdesigner.png" height="300" alt="Sticker IAMDESIGNER Circle">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/global-30.png" height="300" alt="Sticker Global 30">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/justman.png" height="300" alt="Sticker Man">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/iamdesigner.png" height="300" alt="Sticker IAMDESIGNER Circle">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/global-30.png" height="300" alt="Sticker Global 30">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/justman.png" height="300" alt="Sticker Man">
                         </div>
 
                         <div class="new__stickers swiper-slide">
-                            <img class="new__sticker sticker-img sticker-img--md" src="/img/stickers/newwave.png" height="300" alt="Sticker New Wave">
+                            <img class="new__sticker sticker-img sticker-img--md" src="img/stickers/newwave.png" height="300" alt="Sticker New Wave">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -304,24 +304,20 @@
             </div>
         </section>
 
-        <section class="subsribe page-section ">
-            <div class="container">
-                <h2 class="page-section__title subsribe__title">Будь в курсе новинок! Подпишись на рассылку!</h2>
-                <form class="subscribe__form" name="subsribe-form" action="" method="post">
-                    <label class="subsribe-form__label form__label" for="subsribe-form-name">Введите имя</label>
-                    <input class="subsribe-form__input form__input form__input--accent" type="text" placeholder="Имя" name="subsribe-form-name" id="subsribe-form-name" required>
+        <section class="subscribe page-section">
+            <div class="container subscribe-container">
+                <h2 class="secondary-title subscribe__title">Будь в курсе новинок! Подпишись на рассылку!</h2>
+                <form class="subscribe-form" name="subscribe-form" action="" method="post">
+                    <label class="subscribe-form__label form-label visually-hidden" for="subscribe-form-name">Введите имя</label>
+                    <input class="subscribe-form__input form-input form-input--accent" type="text" placeholder="Имя" name="subscribe-form-name" id="subscribe-form-name" required>
 
-                    <label class="subsribe-form__label form__label" for="subsribe-form-email">Введите email</label>
-                    <input class="subsribe-form__input form__input form__input--accent" type="email" placeholder="E-mail" name="subsribe-form-email" id="subsribe-form-email" required>
+                    <label class="subscribe-form__label form-label visually-hidden" for="subscribe-form-email">Введите email</label>
+                    <input class="subscribe-form__input form-input form-input--accent" type="email" placeholder="E-mail" name="subscribe-form-email" id="subscribe-form-email" required>
+                    <button class="btn btn--primary subscribe-form__btn" type="submit">Подписаться</button>
 
-                    <div class="from-field__wrapper subscriber-agreement__wrapper">
-                        <input  class="subsribe-form__checkbox form__checkbox" type="checkbox" name="subscriber-agreement" id="subscriber-agreement" required checked>
-                        <label for="subscriber-agreement">Согласен на обработку персональных данных</label>
-                    </div>
-
-                    <button class="btn btn--primary btn-lg subscibe__btn" type="submit">Подписаться</button>
+                    <input  class="subscribe-form__checkbox form-checkbox" type="checkbox" name="subscribe-agreement" id="subscriber-agreement" required checked>
+                    <label class="subscribe-form__agreement-label form-label" for="subscribe-agreement">Согласен на обработку персональных данных</label>
                 </form>
-                <div class="subscribe__background subscribe-bg"></div>
             </div>
         </section>
 
@@ -484,7 +480,7 @@
                     <img class="logo__img" src="img/logo.svg"  height="40" alt="Aura logo">
                 </a>
 
-                <ul class="footer-nav__list nav-list list-reset">
+                <ul class="footer-nav nav-list list-reset">
                     <li class="footer-nav__item nav-item">
                         <a class="footer-nav__link nav-link" href="#">Соглашение</a>
                     </li>
