@@ -748,10 +748,13 @@ body {
   margin-bottom: var(--seconary-gap);
 }
 
-.subscribe-form__agreement-label {
+.checkbox-text {
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
+}
+
+.subscribe-form__agreement-label {
   color: var(--light-bg-color);
 }
 
@@ -761,13 +764,13 @@ body {
   z-index: -1;
 }
 
-.form-checkbox + .form-label {
+.form-checkbox + .checkbox-text {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.form-checkbox + .form-label::before {
+.form-checkbox + .checkbox-text::before {
   margin-right: 8px;
   content: "";
   display: inline-block;
@@ -780,7 +783,7 @@ body {
   background-position: center;
 }
 
-.form-checkbox:checked + .form-label::before {
+.form-checkbox:checked + .checkbox-text::before {
   background-image: url("../img/check.svg");
 }
 
