@@ -307,16 +307,17 @@
         <section class="subscribe page-section">
             <div class="container subscribe-container">
                 <h2 class="secondary-title subscribe__title">Будь в курсе новинок! Подпишись на рассылку!</h2>
-                <form class="subscribe-form" name="subscribe-form" action="" method="post">
+                <form class="subscribe-form" name="subscribe-form" action="#" method="post">
                     <label class="subscribe-form__label form-label visually-hidden" for="subscribe-form-name">Введите имя</label>
                     <input class="subscribe-form__input form-input form-input--accent" type="text" placeholder="Имя" name="subscribe-form-name" id="subscribe-form-name" required>
 
                     <label class="subscribe-form__label form-label visually-hidden" for="subscribe-form-email">Введите email</label>
                     <input class="subscribe-form__input form-input form-input--accent" type="email" placeholder="E-mail" name="subscribe-form-email" id="subscribe-form-email" required>
                     <button class="btn btn--primary subscribe-form__btn" type="submit">Подписаться</button>
-
-                    <input  class="subscribe-form__checkbox form-checkbox" type="checkbox" name="subscribe-agreement" id="subscribe-agreement" required checked>
-                    <label class="subscribe-form__agreement-label checkbox-text" for="subscribe-agreement">Согласен на обработку персональных данных</label>
+                    <label class="checkbox">
+                        <input  class="subscribe-form__checkbox form-checkbox" type="checkbox" name="subscribe-agreement" required checked>
+						<span class="checkbox__text subscribe-form__agreement-text">Согласен на обработку персональных данных</span>
+					</label>
                 </form>
             </div>
         </section>

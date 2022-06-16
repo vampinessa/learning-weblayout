@@ -225,7 +225,7 @@ body {
 
 .nav-link {
   font-weight: 700;
-  transiaion: color var(--primary-transition);
+  transition: color var(--primary-transition);
 }
 
 .page-section {
@@ -307,7 +307,7 @@ body {
 }
 
 .logo__link {
-  font-weight: 0;
+  font-size: 0;
   line-height: 0;
 }
 
@@ -700,7 +700,7 @@ body {
 }
 
 .subscribe-container {
-  padding: 32px 12px 31px;
+  padding: 32px 12px 33px;
   background-image: url("../img/subscribe-img.png");
   background-repeat: no-repeat;
   background-position: calc(100% - 12px) center;
@@ -748,44 +748,54 @@ body {
   margin-bottom: var(--seconary-gap);
 }
 
-.checkbox-text {
+.checkbox {
+  position: relative;
+  user-select: none;
+  line-height: 0;
+}
+
+.form-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox__text {
+  position: relative;
+  border: 1px solid transparent;
+  padding-left: 21px;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
 }
 
-.subscribe-form__agreement-label {
-  color: var(--light-bg-color);
-}
-
-.form-checkbox {
-  position: absolute;
-  opacity: 1;
-  z-index: -1;
-}
-
-.form-checkbox + .checkbox-text {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
-}
-
-.form-checkbox + .checkbox-text::before {
-  margin-right: 8px;
+.checkbox__text::before {
   content: "";
-  display: inline-block;
+  position: absolute;
+  left: -1px;
+  top: 0;
   width: 14px;
   height: 14px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 1px solid var(--light-bg-color);
-  background-repeat: no-repeat;
-  background-position: center;
+  border: 1px solid currentColor;
 }
 
-.form-checkbox:checked + .checkbox-text::before {
+.checkbox__text::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 14px;
+  height: 14px;
   background-image: url("../img/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
+.form-checkbox:checked + .checkbox__text::after {
+  opacity: 1;
+}
 
-
+.subscribe-form__agreement-text {
+  color: var(--light-bg-color);
+}
