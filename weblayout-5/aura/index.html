@@ -307,7 +307,7 @@
         <section class="subscribe page-section">
             <div class="container subscribe-container">
                 <h2 class="secondary-title subscribe__title">Будь в курсе новинок! Подпишись на рассылку!</h2>
-                <form class="subscribe-form" name="subscribe-form" action="#" method="post">
+                <form class="subscribe-form" name="subscribe-form" action="/" method="post">
                     <label class="subscribe-form__label form-label visually-hidden" for="subscribe-form-name">Введите имя</label>
                     <input class="subscribe-form__input form-input form-input--accent" type="text" placeholder="Имя" name="subscribe-form-name" id="subscribe-form-name" required>
 
@@ -322,28 +322,29 @@
             </div>
         </section>
 
-        <section class="page-section become-author">
-            <h2 class="page-section__title become-author__title">Стать автором</h2>
-            <div class="become-author__description">
-                <p class="become-author__text regular-text">
-                    <strong>Если ты&nbsp;художник или стремишься им&nbsp;стать&nbsp;&mdash; добро пожаловать к&nbsp;нам!</strong>
-                </p>
-                <p class="become-author__text regular-text">
-                    Отправь нам от&nbsp;трёх до&nbsp;пяти своих работ и&nbsp;напиши свой ник в&nbsp;телеграме. Если наши кураторы решат, что нам по&nbsp;пути, то&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;тобой и&nbsp;обговорим условия сотрудничества! <b>Удачи!</b>
-                </p>
-                <img class="become-author__decor-img" src="img/become-author-1.png" alt="" aria-hidden="true">
+        <section class="page-section become-author container">
+            <div class="become-author__content">
+                <h2 class="page-section__title become-author__title">Стать автором</h2>
+                <div class="become-author__description">
+                    <p class="become-author__subtitle secondary-title">
+                        Если ты&nbsp;художник или стремишься им&nbsp;стать&nbsp;&mdash; добро пожаловать к&nbsp;нам!
+                    </p>
+                    <p class="become-author__text regular-text">
+                        Отправь нам от&nbsp;трёх до&nbsp;пяти своих работ и&nbsp;напиши свой ник в&nbsp;телеграме. Если наши кураторы решат, что нам по&nbsp;пути, то&nbsp;мы&nbsp; <wbr> обязательно свяжемся с&nbsp;тобой и&nbsp;обговорим условия сотрудничества! <b>Удачи!</b>
+                    </p>
+                    <img class="become-author__decor-img" src="img/become-author-1.png" alt="" aria-hidden="true">
+                </div>
             </div>
-
-            <form class="become-author__form" action="" name="become-author-form" method="post">
-                <label>
-                    <input class="become-author-form__input form__input become-author-form__upload" type="file" name="become-author-attachment" accept="image/*" required>
-                    <span class="become-author-form__icon upload-icon"></span>
-                    <span class="become-author-form__description">Прикрепить работы (.jpeg / .png)</span>
+            <form class="become-author__form" action="/" name="become-author-form" method="post">
+                <label class="form-upload become-author__form-upload form-input">
+                    <input class="form-upload__input become-author__input" type="file" name="become-author-attachment" accept="image/*" required>
+                    <span class="become-author__form-icon form-upload__icon"></span>
+                    <span class="become-author__form-description">Прикрепить работы (.jpeg / .png)</span>
                 </label>
 
-                <label for="become-author-nickname">Введите Ваш telegram nickname</label>
-                <input class="become-author-form__input form__input" type="text" name="become-author-nickname" id="become-author-nickname" placeholder="@telegram_nickname" required>
-                <button class="btn become-author-form__btn btn--lg btn--primary" type="submit">Отправить</button>
+                <label class="visually-hidden" for="become-author-nickname">Введите Ваш telegram nickname</label>
+                <input class="become-author__input form-input" type="text" name="become-author-nickname" id="become-author-nickname" placeholder="@telegram_nickname" required>
+                <button class="btn become-author__form-btn btn--primary" type="submit">Отправить</button>
             </form>
         </section>
 
