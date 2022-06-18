@@ -35,3 +35,14 @@ $(".search-form__btn--close").click(function () {
   $(".search-form__btn--open").addClass("search-form__btn--open-ico");
   $(".search-form").removeClass("search-form--active");
 });
+
+$(".search-ico--open").click(function () {
+  $(this).removeClass("search-ico--open");
+  $(".search-form").addClass("search-form--active");
+  $(".search-form__input").focus();
+});
+
+$(".search-form__btn-close").click(function () {
+  $(".search-ico").addClass("search-ico--open");
+  $(".search-form").removeClass("search-form--active");
+});
