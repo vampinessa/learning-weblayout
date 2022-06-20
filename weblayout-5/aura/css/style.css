@@ -245,18 +245,12 @@ body {
 .userpic--middle {
   width: 48px;
   height: 48px;
+  margin-right: calc(var(--primary-gap)/2);
 }
 
 .userpic--small {
   width: 24px;
   height: 24px;
-}
-
-.sticker-onwer__img--middle {
-  margin-right: calc(var(--primary-gap)/2);
-}
-
-.sticker-onwer__img--small {
   margin-right: calc(var(--primary-gap)/4);
 }
 
@@ -283,6 +277,10 @@ body {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: var(--seconary-gap);
+}
+
+.text-accent {
+  color: var(--form-text-color);
 }
 
 .page-section__title {
@@ -813,6 +811,7 @@ body {
 .become-author {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 85px;
 }
 
 .become-author__content {
@@ -903,3 +902,79 @@ body {
   line-height: 30px;
   color: var(--form-text-color);
 }
+
+/* top-sales section */
+.top-sales {
+  padding: 90px 0 58px;
+  background-color: var(--dark-bg-color);
+}
+
+.top-sales__title {
+  color: var(--light-bg-color);
+}
+
+.top-sales__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-sales__item {
+  width: calc(50% - (var(--primary-gap)/2));
+  margin-right: var(--primary-gap);
+  margin-bottom: 31px;
+}
+
+.top-sales__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.top-sales-card {
+  display: flex;
+}
+
+.top-sales-card__img {
+  width: 142px;
+  padding: 17px 0;
+  overflow: hidden;
+  background-color: var(--bg-card);
+  border-top-left-radius: var(--bradius-primery);
+  border-bottom-left-radius: var(--bradius-primery);
+}
+
+.top-sales-card__img img {
+  width: 141px;
+  height: 141px;
+  overflow: hidden;
+  transform: translate(16px, -1px);
+}
+
+.top-sales-card__desription {
+  display: flex;
+  flex-direction: column;
+  padding: var(--primary-gap);
+  width: calc(100% - 142px);
+  background-color: var(--light-bg-color);
+  border-top-right-radius: var(--bradius-primery);
+  border-bottom-right-radius: var(--bradius-primery);
+}
+
+.top-sales-card__onwer  {
+  margin-bottom: 9px;
+}
+
+.top-sales-card__title  {
+  margin: 0;
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.top-sales-card__price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+
