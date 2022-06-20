@@ -906,6 +906,7 @@ body {
 /* top-sales section */
 .top-sales {
   padding: 90px 0 58px;
+  margin-bottom: 0;
   background-color: var(--dark-bg-color);
 }
 
@@ -964,7 +965,7 @@ body {
 
 .top-sales-card__title  {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
@@ -977,4 +978,39 @@ body {
   line-height: 20px;
 }
 
+/* top info block */
 
+.top-info {
+  padding: var(--primary-gap);
+  color: var(--light-bg-color);
+  background-color: var(--bg-aside);
+}
+
+.top-info__container {
+  background-image: url("../img/top-imfo-bg.png");
+  background-size: 460px 160px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+}
+
+.top-info__title {
+  margin: 0;
+  font-family: 'Muller';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: var(--seconary-gap);
+}
+
+.top-info__item {
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.top-info__item:not(:last-child) {
+  margin-bottom: var(--seconary-gap);
+}
