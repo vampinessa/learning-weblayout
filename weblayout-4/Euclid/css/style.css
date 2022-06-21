@@ -587,8 +587,10 @@ img {
   margin-bottom: 50px;
 }
 
-.about__features {
+.about-features {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-features__img-container {
@@ -603,23 +605,29 @@ img {
 }
 
 .about-features__excerpt {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  display: flex;
   width: 868px;
+  min-height: 622px;
+  align-self: center;
+}
+
+.about-features__excerpt-decor {
+  background-size: 868px, 622px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-image: url("../img/erector.jpg");
+}
+
+.about-features__excerpt-description {
+  display: flex;
+  padding: 50px;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.about-features__excerpt {
-  display: flex;
-  padding: 50px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-features-excerpt__text {
+.about-features__excerpt-text {
   width: 60%;
   margin: 0;
   font-weight: 700;
@@ -628,38 +636,45 @@ img {
   color: var(--basic-light);
 }
 
-.about-features-excerpt__link {
+.about-features__excerpt-link {
   font-size: 15px;
   line-height: 15px;
 }
 
-.about-features__desc {
+.about-features__features-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.about-features__content {
+.about-features__features-content {
   width: 870px;
-  max-height: 295px;
+  min-height: 296px;
   padding: 65px 60px 65px 299px;
   border: 1px solid var(--basic-invert);
   background-repeat: no-repeat;
   background-position: top 64px left 58px;
 }
 
-.about-features--decor-1 {
+.about-features__features-content:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.about-features__decor-1 {
   background-image: url("../img/decorative/package.svg");
 }
 
-.about-features--decor-2 {
+.about-features__decor-2 {
   background-image: url("../img/decorative/gear.svg");
 }
 
-.about-features__text {
+.about-features__features-text {
   max-width: 450px;
 }
 
+.about-features__features-text:last-child {
+  margin-bottom: 0;
+}
 /* stages section */
 .stages__title {
   margin-bottom: 46px;
