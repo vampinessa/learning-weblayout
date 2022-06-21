@@ -313,7 +313,7 @@ body {
   align-items: center;
 }
 
-.logo__link {
+.logo {
   font-size: 0;
   line-height: 0;
 }
@@ -1013,4 +1013,40 @@ body {
 
 .top-info__item:not(:last-child) {
   margin-bottom: var(--seconary-gap);
+}
+
+/* footer */
+
+.footer__info {
+  padding: 20px 0;
+  background-color: var(--primary-btn-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 100px;
+  height: 40px;
+}
+
+.footer-nav__link:not(:last-child) {
+  margin-right: var(--primary-gap);
+}
+
+.footer__copiright {
+  padding: 8px 0;
+  line-height: 0;
+  text-align: center;
+  background-color: var(--dark-bg-color);
+}
+
+.footer__copiright-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--light-bg-color);
 }
