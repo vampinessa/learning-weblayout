@@ -153,6 +153,11 @@ img {
   fill: #000;
 }
 
+.logo {
+  font-size: 0;
+  line-height: 0;
+}
+
 .logo--secondary svg {
   fill: var(--basic-light);
 }
@@ -513,6 +518,7 @@ img {
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
+  line-height: 0;
   background-color: var(--bg-img);
 }
 
@@ -1042,6 +1048,10 @@ img {
   font-size: 16px;
   line-height: 32px;
   border: none;
+}
+
+.feedback-form__field {
+  line-height: 0;
 }
 
 .feedback-form__input {
