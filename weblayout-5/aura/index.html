@@ -37,20 +37,22 @@
             <nav class="main-nav header__nav">
                 <ul class="main-nav__list nav-list list-reset">
                     <li class="main-nav__item nav-item">
-                        <a class="main-nav__link nav-link main-nav__link--active" href="page.html">Авторы</a>
+                        <a class="main-nav__link nav-link main-nav__link--active" href="#">Авторы</a>
                     </li>
 
                     <li class="main-nav__item nav-item">
-                        <a class="main-nav__link nav-link" href="page.html">Коллекции</a>
+                        <a class="main-nav__link nav-link" href="#">Коллекции</a>
                     </li>
 
                     <li class="main-nav__item nav-item">
-                        <a class="main-nav__link nav-link" href="page.html">Сервисы</a>
+                        <a class="main-nav__link nav-link" href="#">Сервисы</a>
                     </li>
                 </ul>
             </nav>
 
-            <button class="btn btn--additional header__btn" type="button">Кошелёк</button>
+            <button class="btn-reset header__btn" type="button">
+                <span class="btn__text">Кошелёк</span>
+            </button>
     </div>
     </header>
 
@@ -62,8 +64,12 @@
                         Площадка для&nbsp;реализации криптостикеров
                     </h2>
                     <div class="hero__buttons">
-                        <a class="hero__btn btn btn--primary--accent" href="#">Купить</a>
-                        <a class="hero__btn btn btn--secondary btn--secondary--accent " href="#">Стать автором</a>
+                        <a class="btn btn--accent hero__btn" href="#">
+                            <span class="btn__text ">Купить</span>
+                        </a>
+                        <a class="btn btn--stroke btn--stroke--accent hero__btn" href="#">
+                            <span class="btn__text">Стать автором</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -109,7 +115,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn auction-promo__btn btn--primary btn--lg" type="button">Cделать ставку</button>
+                        <button class="btn auction-promo__btn" type="button">
+                            <span class="btn__text">Cделать ставку</span>
+                        </button>
                     </div>
                 </article>
             </div>
@@ -268,7 +276,9 @@
                     </li>
                 </ul>
                 <div class="btn-center">
-                    <button class="btn auctions__btn btn--secondary" type="button">Все аукционы</button>
+                    <button class="btn btn--stroke auctions__btn" type="button">
+                        <span class="btn__text">Все аукционы</span>
+                    </button>
                 </div>
                 </div>
         </section>
@@ -313,7 +323,9 @@
 
                     <label class="subscribe-form__label form-label visually-hidden" for="subscribe-form-email">Введите email</label>
                     <input class="subscribe-form__input form-input form-input--accent" type="email" placeholder="E-mail" name="subscribe-form-email" id="subscribe-form-email" required>
-                    <button class="btn btn--primary subscribe-form__btn" type="submit">Подписаться</button>
+                    <button class="btn subscribe-form__btn" type="submit">
+                        <span class="btn__text">Подписаться</span>
+                    </button>
                     <label class="checkbox">
                         <input  class="subscribe-form__checkbox form-checkbox" type="checkbox" name="subscribe-agreement" required checked>
 						<span class="checkbox__text subscribe-form__agreement-text">Согласен на обработку персональных данных</span>
@@ -335,7 +347,7 @@
                     <img class="become-author__decor-img" src="img/become-author-1.png" alt="" aria-hidden="true">
                 </div>
             </div>
-            <form class="become-author__form" action="/" name="become-author-form" method="post">
+            <form class="become-author__form become-author-form" action="/" name="become-author-form" method="post">
                 <label class="form-upload become-author__form-upload form-input">
                     <input class="form-upload__input become-author__input" type="file" name="become-author-attachment" accept="image/*" required>
                     <span class="become-author__form-icon form-upload__icon"></span>
@@ -344,7 +356,9 @@
 
                 <label class="visually-hidden" for="become-author-nickname">Введите Ваш telegram nickname</label>
                 <input class="become-author__input form-input" type="text" name="become-author-nickname" id="become-author-nickname" placeholder="@telegram_nickname" required>
-                <button class="btn become-author__form-btn btn--primary" type="submit">Отправить</button>
+                <button class="btn become-author-form__btn" type="submit">
+                    <span class="btn__text">Отправить</span>
+                </button>
             </form>
         </section>
 
