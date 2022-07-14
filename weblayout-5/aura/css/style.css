@@ -57,7 +57,7 @@ html {
   --bradius-primery: 40px;
   --bradius-secondary: 23px;
   --btn-primary-border: 5px solid #46F4DB;
-  --primary-transition: .5s ease-in-out;
+  --primary-transition: .4s ease-in-out;
   --primary-gap: 32px;
   --seconary-gap: 16px;
 }
@@ -714,9 +714,8 @@ opacity: 1;
 }
 
 .new__slider {
-  overflow: hidden;
   width: 100%;
-  background-color: var(--dark-bg-color);
+  overflow: hidden;
 }
 
 .new__stickers {
@@ -728,16 +727,11 @@ opacity: 1;
 }
 
 .swiper-wrapper {
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .swiper-pagination {
   position: initial;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 0;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -763,28 +757,28 @@ opacity: 1;
   border: 2px solid var(--accent-bg-color);
   border-radius: var(--bradius-primery);
   opacity: 1;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color var(--primary-transition), border-color var(--primary-transition);
 }
 
 .swiper-pagination-bullet-active {
-  padding: 8px 23px;
+  padding: 8px 21px;
   color: var(--light-bg-color);
   background-color: var(--accent-bg-color);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color var(--primary-transition), border-color var(--primary-transition);
 }
 
 .swiper-pagination-bullet:focus-visible,
-.swiper-pagination-bullet:hover  {
+.swiper-pagination-bullet:hover {
   outline: none;
-  padding: 10px 23px;
   background-color: var(--accent-seconary-color);
-  border: none;
-  transition: background-color 0.3s ease-in-out;
+  border-color: var(--accent-seconary-color);
 }
 
-.swiper-pagination-bullet:focus-visible,
-.swiper-pagination-bullet:hover   {
-  padding: 10px 25px;
+.swiper-pagination-bullet-active:focus-visible,
+.swiper-pagination-bullet-active:hover {
+  outline: none;
+  background-color: var(--accent-seconary-color);
+  border-color: var(--accent-seconary-color);
 }
 
 /* subsribe */
