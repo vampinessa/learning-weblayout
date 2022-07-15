@@ -332,7 +332,7 @@ opacity: 1;
   background-color: var(--light-bg-color);
   border: 2px solid transparent;
   border-radius: 100%;
-  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-color var(--primary-transition);
 }
 
 .form-upload__icon::before {
@@ -344,6 +344,7 @@ opacity: 1;
   height: 6px;
   background-color: var(--bg-card);
   transform: translate(-50%, -50%);
+  transition: background-color var(--primary-transition);
 }
 
 .form-upload__icon::after {
@@ -355,6 +356,7 @@ opacity: 1;
   height: 40px;
   background-color: var(--bg-card);
   transform: translate(-50%, -50%);
+  transition: background-color var(--primary-transition);
 }
 
 .form-upload__description {
@@ -364,6 +366,32 @@ opacity: 1;
   color: var(--form-text-color);
 }
 
+.form-upload:focus-within .form-upload__icon::before,
+.form-upload:focus-within .form-upload__icon::after {
+  background-color: var(--primary-btn-color);
+}
+
+.form-upload:focus-within .form-upload__icon {
+border-color: var(--primary-btn-color);
+}
+
+.form-upload:hover .form-upload__icon::before,
+.form-upload:hover .form-upload__icon::after {
+  background-color: var(--primary-btn-color);
+}
+
+.form-upload:hover .form-upload__icon {
+border-color: var(--primary-btn-color);
+}
+
+.form-upload:active .form-upload__icon::before,
+.form-upload:active .form-upload__icon::after {
+  background-color: var(--primary-btn-active-color);
+}
+
+.form-upload:active .form-upload__icon {
+border-color: var(--primary-btn-active-color);
+}
 /* navigation */
 .nav-list {
   display: flex;
