@@ -320,7 +320,6 @@ opacity: 1;
   position: absolute;
   opacity: 0;
   appearance: none;
-  z-index: -1;
 }
 
 .form-upload__icon {
@@ -329,10 +328,11 @@ opacity: 1;
   width: 100px;
   height: 100px;
   margin-bottom: 17px;
-  background-color: var(--light-bg-color);
+  color: var(--bg-card);
   border: 2px solid transparent;
   border-radius: 100%;
-  transition: border-color var(--primary-transition);
+  background-color: var(--light-bg-color);
+  transition: color  var(--primary-transition), border-color var(--primary-transition);
 }
 
 .form-upload__icon::before {
@@ -342,9 +342,8 @@ opacity: 1;
   left: 50%;
   width: 40px;
   height: 6px;
-  background-color: var(--bg-card);
+  background-color: currentColor;
   transform: translate(-50%, -50%);
-  transition: background-color var(--primary-transition);
 }
 
 .form-upload__icon::after {
@@ -354,9 +353,8 @@ opacity: 1;
   left: 50%;
   width: 6px;
   height: 40px;
-  background-color: var(--bg-card);
+  background-color: currentColor;
   transform: translate(-50%, -50%);
-  transition: background-color var(--primary-transition);
 }
 
 .form-upload__description {
@@ -366,32 +364,21 @@ opacity: 1;
   color: var(--form-text-color);
 }
 
-.form-upload:focus-within .form-upload__icon::before,
-.form-upload:focus-within .form-upload__icon::after {
-  background-color: var(--primary-btn-color);
+.form-upload__input:focus + .form-upload__icon {
+  border-color: var(--primary-btn-color);
+  color: var(--primary-btn-color);
 }
 
-.form-upload:focus-within .form-upload__icon {
-border-color: var(--primary-btn-color);
+.form-upload__input:hover + .form-upload__icon {
+  border-color: var(--primary-btn-color);
+  color: var(--primary-btn-color);
 }
 
-.form-upload:hover .form-upload__icon::before,
-.form-upload:hover .form-upload__icon::after {
-  background-color: var(--primary-btn-color);
+.form-upload__input:active + .form-upload__icon {
+  border-color: var(--primary-btn-active-color);
+  color: var(--primary-btn-active-color);
 }
 
-.form-upload:hover .form-upload__icon {
-border-color: var(--primary-btn-color);
-}
-
-.form-upload:active .form-upload__icon::before,
-.form-upload:active .form-upload__icon::after {
-  background-color: var(--primary-btn-active-color);
-}
-
-.form-upload:active .form-upload__icon {
-border-color: var(--primary-btn-active-color);
-}
 /* navigation */
 .nav-list {
   display: flex;
