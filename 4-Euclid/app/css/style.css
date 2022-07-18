@@ -202,6 +202,29 @@ img {
   margin-bottom: 8px;
 }
 
+.basic-link {
+  display: inline;
+  color: var(--bg-img);
+}
+
+.basic-link:visited {
+  color: var(--bg-basic-social);
+}
+
+.basic-link:focus {
+  outline: 1px solid var(--basic-accent);
+  outline-offset: 2px;
+}
+
+.basic-link:hover {
+  color: var(--basic-accent);
+  text-decoration: underline;
+}
+
+.basic-link:active {
+  color: var(--basic-active);
+}
+
 .page-section {
   margin-bottom: 100px;
 }
