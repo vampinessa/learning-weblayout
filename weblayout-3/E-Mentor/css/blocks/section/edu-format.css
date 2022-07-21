@@ -1,4 +1,12 @@
 .edu-format__img {
+  position: relative;
+  width: 470px;
+  height: 332px;
+  align-self: flex-end;
+  border-radius: 0px 120px 0px 0px;
+}
+
+edu-format__decorative-border {
   width: 470px;
   height: 332px;
 }

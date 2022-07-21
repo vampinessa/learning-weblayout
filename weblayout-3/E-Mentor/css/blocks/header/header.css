@@ -1,3 +1,8 @@
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
 .site-header--theme-accent {
   background-color: #10b582;
 }

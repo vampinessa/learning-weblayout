@@ -5,6 +5,8 @@
 
 .social-media--vertical {
   flex-direction: column;
+  width: 22px;
+  height: 126px;
 }
 
 .social-media__link {

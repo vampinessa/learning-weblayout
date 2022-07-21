@@ -1,5 +1,4 @@
 .teachers {
-  flex-direction: row;
   flex-wrap: wrap;
   width: 580px;
   justify-content: space-between;
