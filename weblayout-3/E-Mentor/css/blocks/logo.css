@@ -1,11 +1,5 @@
-.home__link {
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  line-height: 0;
-}
-
 .logo {
+  display: block;
   width: 170px;
   height: 22px;
   fill: #353A5A;
